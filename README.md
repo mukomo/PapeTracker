@@ -1,6 +1,8 @@
 # PapeTracker
 A Paper Mario 64 item tracker for use with the online randomizer [PM64Randomizer](https://pm64randomizer.com)
+
 This was forked from RedBuddha's [KH2Tracker](https://github.com/Red-Buddha/KH2Tracker)
+
 Icons used in this tracker come from the Mario Wiki page on [Paper Mario](https://www.mariowiki.com/Paper_Mario)
 
 
@@ -13,12 +15,12 @@ Icons used in this tracker come from the Mario Wiki page on [Paper Mario](https:
 ***
   
 * Reset Window
- * Resets the main and broadcast windows to their default size
+  * Resets the main and broadcast windows to their default size
 * Reset Tracker
   * Resets the tracker to its default state 
   
 ## Toggles
-* Loading Hints will automatically toggle the settings that the hint file was made with
+  * Loading Hints will automatically toggle the settings that the hint file was made with
   
 ***
 
