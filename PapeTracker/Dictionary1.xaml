@@ -57,26 +57,29 @@
     <Image x:Key="BowserCastleKey" Source="Images\Pape\KeyItems\PM_Bowser_Castle_Key.png" x:Shared="false" Tag="Major"/>
     
     <!--Important Items for Other Checks: 5 pts-->
-    <Image x:Key="Dolly" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="KooperShell" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Letter" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Artifact" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Record" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Weight" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Calculator" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="FryingPan" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Mailbag" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Cookbook" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Dictionary" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="VolcanoVase" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="CrystalBerry" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="WaterStone" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Lyrics" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="Melody" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="RedBerry" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="YellowBerry" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="BlueBerry" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
-    <Image x:Key="BubbleBerry" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Dolly" Source="Images\Pape\MinorItems\PM_PeachDoll.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="KooperShell" Source="Images\Pape\MinorItems\PM_KooperShell.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Letter" Source="Images\Pape\Letters\PM_Letter.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Artifact" Source="Images\Pape\MinorItems\PM_Artifact.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Record" Source="Images\Pape\MinorItems\PM_Record.gif" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Weight" Source="Images\Pape\MinorItems\PM_Weight.gif" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Calculator" Source="Images\Pape\MinorItems\PM_Calculator.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="FryingPan" Source="Images\Pape\MinorItems\PM_FryingPan.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Mailbag" Source="Images\Pape\MinorItems\PM_Mailbag.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Cookbook" Source="Images\Pape\MinorItems\PM_CookBook.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Dictionary" Source="Images\Pape\MinorItems\PM_Dictionary.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="VolcanoVase" Source="Images\Pape\MinorItems\PM_VolcanoVase.gif" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="CrystalBerry" Source="Images\Pape\MinorItems\PM_CrystalBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="WaterStone" Source="Images\Pape\MinorItems\PM_WaterSTone.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Lyrics" Source="Images\Pape\MinorItems\PM_Lyrics.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Melody" Source="Images\Pape\MinorItems\PM_Melody.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="RedBerry" Source="Images\Pape\MinorItems\PM_RedBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="YellowBerry" Source="Images\Pape\MinorItems\PM_YellowBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="BlueBerry" Source="Images\Pape\MinorItems\PM_BlueBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="BubbleBerry" Source="Images\Pape\MinorItems\PM_BubbleBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="BlueKey" Source="Images\Pape\MinorItems\PM_BlueKey.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="CakeMix" Source="Images\Pape\MinorItems\PM_CakeMix.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Lemon" Source="Images\Pape\MinorItems\PM_Lemon.png" x:Shared="false" Tag="Minor"/>
     <StackPanel x:Key="StoreroomKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
         <Image Source="Images\Pape\KeyItems\PM_Key.gif" Height="40"/>
         <TextBlock Margin="20,-20,0,0" Text="S" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
@@ -85,7 +88,6 @@
         <Image Source="Images\Pape\KeyItems\PM_Key.gif" Height="40"/>
         <TextBlock Margin="20,-20,0,0" Text="O" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
     </StackPanel>
-    <Image x:Key="BlueKey" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Minor"/>
     <StackPanel x:Key="PrisonKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
         <Image Source="Images\Pape\KeyItems\PM_Key.gif" Height="40"/>
         <TextBlock Margin="20,-20,0,0" Text="P" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
@@ -119,7 +121,7 @@
     <Image x:Key="ForeverForestImage" Source="Images\Pape\PM_Oaklie.png"/>
     <Image x:Key="GustyGulchImage" Source="Images\Pape\PM_Herbert.png"/>
     <Image x:Key="ShyGuyToyboxImage" Source="Images\Pape\Partners\Watt.png"/>
-    <Image x:Key="MtLavalavaImage" Source="Images\Pape\PM_VolcanoVase.gif"/>
+    <Image x:Key="MtLavalavaImage" Source="Images\Pape\MinorItems\PM_VolcanoVase.gif"/>
     <Image x:Key="ShiverMountainImage" Source="Images\Pape\PM_Herringway.png"/>
     <Image x:Key="BowserCastleImage" Source="Images\Pape\KeyItems\PM_Bowser_Castle_Key.png"/>
 

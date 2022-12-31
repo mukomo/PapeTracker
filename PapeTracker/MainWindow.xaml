@@ -69,7 +69,7 @@
                 <MenuItem Name="DragAndDropOption" Header="Drag and Drop" IsCheckable="True" IsChecked="True" Click="DragDropToggle"/>
                 <MenuItem Name="TopMostOption" Header="Always on Top" IsCheckable="True" IsChecked="False" Click="TopMostToggle"/>
                 <MenuItem Name="BroadcastStartupOption" Header="Broadcast Window On Startup" IsCheckable="True" IsChecked="False" Click="BroadcastStartupToggle"/>
-                <MenuItem Name="FormsGrowthOption" Header="Forms and Growth Abilities" IsCheckable="True" IsChecked="True" Click="FormsGrowthToggle"/>
+                <MenuItem Name="FormsGrowthOption" Header="Forms and Growth Abilities" IsCheckable="True" IsChecked="False" Click="FormsGrowthToggle"/>
             </MenuItem>
             <MenuItem Name="ModeDisplay" Header="" Focusable="False" IsHitTestVisible="False"/>
             <MenuItem Header="v0.1" IsHitTestVisible="False" Focusable="False" HorizontalAlignment="Right"/>
@@ -1094,42 +1094,24 @@
                 <local:Item x:Name="ToyTrain" Content="{DynamicResource ToyTrain}" Grid.Row="1" Grid.Column="6" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="Cake" Content="{DynamicResource Cake}" Grid.Row="1" Grid.Column="7" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="JadeRaven" Content="{DynamicResource JadeRaven}" Grid.Row="1" Grid.Column="9" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="MagicalSeed1" Content="{DynamicResource MagicalSeed1}" Grid.Row="1" Grid.Column="6" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="MagicalSeed2" Content="{DynamicResource MagicalSeed2}" Grid.Row="1" Grid.Column="7" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="MagicalSeed3" Content="{DynamicResource MagicalSeed3}" Grid.Row="1" Grid.Column="8" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="MagicalSeed4" Content="{DynamicResource MagicalSeed4}" Grid.Row="1" Grid.Column="9" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="MagicalBean" Content="{DynamicResource MagicalBean}" Grid.Row="1" Grid.Column="10" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="FertileSoil" Content="{DynamicResource FertileSoil}" Grid.Row="1" Grid.Column="11" Tag="MajorItemsGrid"/>
+                
+                
+                <local:Item x:Name="MagicalSeed1" Content="{DynamicResource MagicalSeed1}" Grid.Row="2" Grid.Column="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="MagicalSeed2" Content="{DynamicResource MagicalSeed2}" Grid.Row="2" Grid.Column="1" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="MagicalSeed3" Content="{DynamicResource MagicalSeed3}" Grid.Row="2" Grid.Column="2" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="MagicalSeed4" Content="{DynamicResource MagicalSeed4}" Grid.Row="2" Grid.Column="3" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="MagicalBean" Content="{DynamicResource MagicalBean}" Grid.Row="2" Grid.Column="4" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="FertileSoil" Content="{DynamicResource FertileSoil}" Grid.Row="2" Grid.Column="5" Tag="MajorItemsGrid"/>
 
                 <!-- Row 3 -->
-                <local:Item x:Name="MiracleWater" Content="{DynamicResource MiracleWater}" Grid.Row="2" Grid.Column="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="WarehouseKey" Content="{DynamicResource WarehouseKey}" Grid.Row="2" Grid.Column="1" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="Bucket" Content="{DynamicResource Bucket}" Grid.Row="2" Grid.Column="2" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="Scarf" Content="{DynamicResource Scarf}" Grid.Row="2" Grid.Column="3" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="StarStone" Content="{DynamicResource StarStone}" Grid.Row="2" Grid.Column="4" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="RedKey" Content="{DynamicResource RedKey}" Grid.Row="2" Grid.Column="5" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="PalaceKey" Content="{DynamicResource PalaceKey}" Grid.Row="2" Grid.Column="6" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="BowserKey" Content="{DynamicResource BowserCastleKey}" Grid.Row="2" Grid.Column="7" Tag="MajorItemsGrid"/>
-                <!--<local:Item x:Name="Limit" Content="{DynamicResource Limit}" Grid.Row="2" Grid.Column="8"/>
-                <local:Item x:Name="Master" Content="{DynamicResource Master}" Grid.Row="2" Grid.Column="9"/>
-                <local:Item x:Name="Final" Content="{DynamicResource Final}" Grid.Row="2" Grid.Column="10"/>
-                <local:Item x:Name="OnceMore" Content="{DynamicResource OnceMore}" Grid.Row="2" Grid.Column="11"/>
-                <local:Item x:Name="SecondChance" Content="{DynamicResource SecondChance}" Grid.Row="2" Grid.Column="12"/>
-
-                --><!-- Row 4 --><!--
-                <local:Item x:Name="TornPage1" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="0"/>
-                <local:Item x:Name="TornPage2" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="1"/>
-                <local:Item x:Name="TornPage3" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="2"/>
-                <local:Item x:Name="TornPage4" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="3"/>
-                <local:Item x:Name="TornPage5" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="4"/>
-                <local:Item x:Name="Baseball" Content="{DynamicResource ChickenLittle}" Grid.Row="3" Grid.Column="5"/>
-                <local:Item x:Name="Lamp" Content="{DynamicResource Genie}" Grid.Row="3" Grid.Column="6"/>
-                <local:Item x:Name="Ukulele" Content="{DynamicResource Stitch}" Grid.Row="3" Grid.Column="7"/>
-                <local:Item x:Name="Feather" Content="{DynamicResource PeterPan}" Grid.Row="3" Grid.Column="8"/>
-                <local:Item x:Name="Nonexistence" Content="{DynamicResource ProofOfNonexistence}" Grid.Row="3" Grid.Column="9"/>-->
-                <!--<local:Item x:Name="Connection" Content="{DynamicResource ProofOfConnection}" Grid.Row="3" Grid.Column="10"/>-->
-                <!--<local:Item x:Name="Peace" Content="{DynamicResource ProofOfPeace}" Grid.Row="3" Grid.Column="11"/>-->
-                <!--<local:Item x:Name="PromiseCharm" Content="{DynamicResource PromiseCharm}" Grid.Row="3" Grid.Column="12"/>-->
+                <local:Item x:Name="MiracleWater" Content="{DynamicResource MiracleWater}" Grid.Row="3" Grid.Column="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="WarehouseKey" Content="{DynamicResource WarehouseKey}" Grid.Row="3" Grid.Column="1" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="Bucket" Content="{DynamicResource Bucket}" Grid.Row="3" Grid.Column="2" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="Scarf" Content="{DynamicResource Scarf}" Grid.Row="3" Grid.Column="3" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="StarStone" Content="{DynamicResource StarStone}" Grid.Row="3" Grid.Column="4" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="RedKey" Content="{DynamicResource RedKey}" Grid.Row="3" Grid.Column="5" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="PalaceKey" Content="{DynamicResource PalaceKey}" Grid.Row="3" Grid.Column="6" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="BowserKey" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="12" Tag="MajorItemsGrid"/>
             </Grid>
 
             <Grid Name="MinorItemsGrid" Grid.Row="4" Visibility="Collapsed">
