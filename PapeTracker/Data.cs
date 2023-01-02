@@ -58,8 +58,9 @@ namespace PapeTracker
         public TextBlock hint;
         public WorldGrid worldGrid;
         public Image selectedBar;
+        public string SpoilerLogRegion;
 
-        public WorldData(Grid Top, Button World, ContentControl Progression, TextBlock Hint, WorldGrid grid, Image SelectedBar, bool Hinted)
+        public WorldData(Grid Top, Button World, ContentControl Progression, TextBlock Hint, WorldGrid grid, Image SelectedBar, bool Hinted, string spoilerLogRegion = "")
         {
             top = Top;
             world = World;
@@ -71,6 +72,7 @@ namespace PapeTracker
             hintedHint = false;
             complete = false;
             progress = 0;
+            SpoilerLogRegion = spoilerLogRegion;
         }
     }
 

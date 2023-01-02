@@ -6,24 +6,22 @@
 		<ContentPresenter Content="{TemplateBinding Content}"/>
 	</ControlTemplate>
 
-	<!--Old Item Icons-->
-	
 	<!--Partners and Gear Upgrades: 9 pts-->
-    <Image x:Key="Goombario" Source="Images\Pape\Partners\Goombario.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Kooper" Source="Images\Pape\Partners\Kooper.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Bombette" Source="Images\Pape\Partners\Bombette.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Parakarry" Source="Images\Pape\Partners\Parakarry.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Bow" Source="Images\Pape\Partners\Bow.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Watt" Source="Images\Pape\Partners\Watt.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Sushie" Source="Images\Pape\Partners\Sushie.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Spike" Source="Images\Pape\Partners\Lakilester.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Boots" Source="Images\Pape\Gear\PM_Boots.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="SuperBoots" Source="Images\Pape\Gear\PM_SuperBoots.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="UltraBoots" Source="Images\Pape\Gear\PM_UltraBoots.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="Hammer" Source="Images\Pape\Gear\PM_Hammer.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="SuperHammer" Source="Images\Pape\Gear\PM_SuperHammer.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="UltraHammer" Source="Images\Pape\Gear\PM_UltraHammer.png" Height="40" x:Shared="false" Tag="PartnersGear"/>
-    <Image x:Key="UltraStone" Source="Images\Pape\KeyItems\PM_UltraStone.gif" Height="40" x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Goombario" Source="Images\Pape\Partners\Goombario.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Kooper" Source="Images\Pape\Partners\Kooper.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Bombette" Source="Images\Pape\Partners\Bombette.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Parakarry" Source="Images\Pape\Partners\Parakarry.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Bow" Source="Images\Pape\Partners\Bow.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Watt" Source="Images\Pape\Partners\Watt.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Sushie" Source="Images\Pape\Partners\Sushie.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Spike" Source="Images\Pape\Partners\Lakilester.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Boots" Source="Images\Pape\Gear\PM_Boots.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="SuperBoots" Source="Images\Pape\Gear\PM_SuperBoots.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="UltraBoots" Source="Images\Pape\Gear\PM_UltraBoots.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Hammer" Source="Images\Pape\Gear\PM_Hammer.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="SuperHammer" Source="Images\Pape\Gear\PM_SuperHammer.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="UltraHammer" Source="Images\Pape\Gear\PM_UltraHammer.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="UltraStone" Source="Images\Pape\KeyItems\PM_UltraStone.gif"  x:Shared="false" Tag="PartnersGear"/>
     
     <!--Required Items for Chapter Progression: 7 pts-->
 	<Image x:Key="FortressKey" Source="Images\Pape\KeyItems\PM_FortressKey.png" x:Shared="false" Tag="Major"/>
@@ -46,7 +44,7 @@
     <Image x:Key="FertileSoil" Source="Images\Pape\KeyItems\PM_Fertile_Soil.png" x:Shared="false" Tag="Major"/>
     <Image x:Key="MiracleWater" Source="Images\Pape\KeyItems\PM_MiracleWater.png" x:Shared="false" Tag="Major"/>
     <StackPanel x:Key="WarehouseKey" VerticalAlignment="Center" x:Shared="false" Tag="Major">
-        <Image Source="Images\Pape\KeyItems\PM_Key.gif" Height="40"/>
+        <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
         <TextBlock Margin="20,-20,0,0" Text="W" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
     </StackPanel>
     <Image x:Key="Bucket" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Major"/>
@@ -81,36 +79,31 @@
     <Image x:Key="CakeMix" Source="Images\Pape\MinorItems\PM_CakeMix.png" x:Shared="false" Tag="Minor"/>
     <Image x:Key="Lemon" Source="Images\Pape\MinorItems\PM_Lemon.png" x:Shared="false" Tag="Minor"/>
     <StackPanel x:Key="StoreroomKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
-        <Image Source="Images\Pape\KeyItems\PM_Key.gif" Height="40"/>
+        <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
         <TextBlock Margin="20,-20,0,0" Text="S" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
     </StackPanel>
     <StackPanel x:Key="OddKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
-        <Image Source="Images\Pape\KeyItems\PM_Key.gif" Height="40"/>
+        <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
         <TextBlock Margin="20,-20,0,0" Text="O" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
     </StackPanel>
     <StackPanel x:Key="PrisonKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
-        <Image Source="Images\Pape\KeyItems\PM_Key.gif" Height="40"/>
+        <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
         <TextBlock Margin="20,-20,0,0" Text="P" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
     </StackPanel>
-
-    <!--Report Fail Icons-->
-    <TextBlock x:Key="WarehouseLabel" Margin="25,30,0,0" Text="W" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <TextBlock x:Key="LyricsLabel" Margin="25,30,0,0" Text="L" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <TextBlock x:Key="MelodyLabel" Margin="25,30,0,0" Text="M" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <TextBlock x:Key="RedLabel" Margin="25,30,0,0" Text="R" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <TextBlock x:Key="YellowBerryLabel" Margin="25,30,0,0" Text="Y" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <TextBlock x:Key="StoreroomLabel" Margin="25,30,0,0" Text="S" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <TextBlock x:Key="OddLabel" Margin="25,30,0,0" Text="O" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <TextBlock x:Key="BlueLabel" Margin="25,30,0,0" Text="B" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <TextBlock x:Key="PrisonLabel" Margin="25,30,0,0" Text="P" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
-    <Image x:Key="Fail0" x:Shared="false"/>
-	<Image x:Key="Fail1" Source="Images\FailBar.png" Margin="25,15,0,0" Height="15" x:Shared="false"/>
-	<StackPanel x:Key="Fail2" VerticalAlignment="Center" x:Shared="false">
-		<Image Source="Images\FailBar.png" Margin="-25,-15,0,0" Height="15"/>
-		<Image Source="Images\FailBar.png" Margin="-15,-15,0,0" Height="15"/>
-	</StackPanel>
-    <Image x:Key="Fail3" Source="Images\FailX.png" Margin="-20,-15,0,0" Height="15" x:Shared="false"/>
-
+    
+    <!--Badges and Item Pouches: 3 pts-->
+    <Image x:Key="BumpAttack" Source="Images\Pape\Badges\Bump_Attack_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="DodgeMaster" Source="Images\Pape\Badges\Dodge_Master_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FeelingFine" Source="Images\Pape\Badges\Feeling_Fine_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FPPlus" Source="Images\Pape\Badges\FP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="HPPlus" Source="Images\Pape\Badges\HP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaJump" Source="Images\Pape\Badges\Mega_Jump_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaQuake" Source="Images\Pape\Badges\Mega_Quake_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaSmash" Source="Images\Pape\Badges\Mega_Smash_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="PowerPlus" Source="Images\Pape\Badges\Power_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="SpikeShield" Source="Images\Pape\Badges\Spike_Shield_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="ItemPouch" Source="Images\Pape\PM_ItemPouch.png" x:Shared="false" Tag="Badges"/>
+    
 
     <!--Simple World Icons-->
 	<Image x:Key="GoombaRegionImage" Source="Images\Pape\Partners\Goombario.png"/>
@@ -123,7 +116,7 @@
     <Image x:Key="ShyGuyToyboxImage" Source="Images\Pape\Partners\Watt.png"/>
     <Image x:Key="MtLavalavaImage" Source="Images\Pape\MinorItems\PM_VolcanoVase.gif"/>
     <Image x:Key="ShiverMountainImage" Source="Images\Pape\PM_Herringway.png"/>
-    <Image x:Key="BowserCastleImage" Source="Images\Pape\KeyItems\PM_Bowser_Castle_Key.png"/>
+    <Image x:Key="BowserCastleImage" Source="Images\Pape\PM_Bowser.gif"/>
 
     <Image x:Key="ToadTownImage" Source="Images\Pape\PM_Toad.png"/>
     <Image x:Key="ShootingStarSummitImage" Source="Images\Pape\Letters\PM_Merlow.png"/>
@@ -134,6 +127,6 @@
     <Image x:Key="TubbaCastleImage" Source="Images\Pape\PM_Tubba's_Heart.gif"/>
     <Image x:Key="JadeJungleImage" Source="Images\Pape\Partners\Sushie.png"/>
     <Image x:Key="FlowerFieldsImage" Source="Images\Pape\Partners\Lakilester.png"/>
-    <Image x:Key="CrystalPalaceImage" Source="Images\Pape\KeyItems\PM_Palace_Key.png"/>
+    <Image x:Key="CrystalPalaceImage" Source="Images\Pape\PM_Crystal_King.gif"/>
     <Image x:Key="StartingGearImage" Source="Images\Pape\PM_StarPoint.png"/>
 </ResourceDictionary>

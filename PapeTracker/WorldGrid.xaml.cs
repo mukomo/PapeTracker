@@ -39,7 +39,17 @@ namespace PapeTracker
                 }
             }
             else
+            {
                 Children.Remove(button);
+                string worldName = Name.Substring(0, Name.Length - 4);
+                TextBlock hint = MainWindow.data.WorldsData[worldName].hint;
+                if(!(hint is null))
+                {
+                    int value = Int32.Parse(hint.Text);
+                    IncrementFound(worldName, button);
+                }
+                
+            }
 
             int gridremainder = 0;
             if (Children.Count % 5 != 0)
@@ -63,6 +73,7 @@ namespace PapeTracker
                 if (MainWindow.data.WorldsData[worldName].hint != null)
                 {
                     TextBlock hint = MainWindow.data.WorldsData[worldName].hint;
+                    int value = Int32.Parse(hint.Text);
                     ((MainWindow)App.Current.MainWindow).SetReportValue(hint, Children.Count + 1);
                 }
             }
@@ -85,9 +96,9 @@ namespace PapeTracker
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
                 if (System.IO.Path.GetExtension(files[0]).ToUpper() == ".TXT")
-                    window.LoadHints(files[0]);
-                else if (System.IO.Path.GetExtension(files[0]).ToUpper() == ".PNACH")
-                    window.ParseSeed(files[0]);
+                    window.LoadValues(files[0]);
+                //else if (System.IO.Path.GetExtension(files[0]).ToUpper() == ".PNACH")
+                //    window.ParseSeed(files[0]);
             }
         }
 
@@ -98,8 +109,11 @@ namespace PapeTracker
             pool.Children.Remove(item);
             Handle_WorldGrid(item, true);
 
+            int itemValue = MainWindow.itemValues[item.Tag.ToString()];
+
             // update collection count
-            window.IncrementCollected();
+            window.IncrementCollected(itemValue);
+            DecrementFound(Name.Remove(Name.Length - 4, 4), item);
             
             // update mouse actions
             if (MainWindow.data.dragDrop)
@@ -116,6 +130,38 @@ namespace PapeTracker
             item.MouseDown += item.Item_Return;
 
             item.DragDropEventFire(item.Name, Name.Remove(Name.Length - 4, 4), true);
+        }
+
+        public void IncrementFound(string world, Item item)
+        {
+            WorldData data = MainWindow.data.WorldsData[world];
+            int itemValue = MainWindow.itemValues[item.Tag.ToString()];
+            int currentWorldValue = 0;
+            if (!(data.hint is null))
+            {
+                bool hasHint = Int32.TryParse(data.hint.Text, out currentWorldValue);
+                if (hasHint)
+                {
+                    currentWorldValue += itemValue;
+                    data.hint.Text = currentWorldValue.ToString();
+                }
+            }
+        }
+
+        public void DecrementFound(string world, Item item)
+        {
+            WorldData data = MainWindow.data.WorldsData[world];
+            int itemValue = MainWindow.itemValues[item.Tag.ToString()];
+            int currentWorldValue = 0;
+            if(!(data.hint is null))
+            {
+                bool hasHint = Int32.TryParse(data.hint.Text, out currentWorldValue);
+                if (hasHint)
+                {
+                    currentWorldValue -= itemValue;
+                    data.hint.Text = currentWorldValue.ToString();
+                }
+            }
         }
 
         public bool Handle_Report(Item item, MainWindow window, Data data)

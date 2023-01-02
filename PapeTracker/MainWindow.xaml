@@ -514,7 +514,7 @@
                             </Button>
                             <TextBlock x:Name="ShootingStarSummitHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?" VerticalAlignment="Center" Grid.RowSpan="2"/>
                             <!--<Image Name="ToadTownHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
-                            <Image Name="ShootingStarWayBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
+                            <Image Name="ShootingStarSummitBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
                         </Grid>
                         <local:WorldGrid x:Name="ShootingStarSummitGrid" Grid.Column="1"/>
                     </Grid>
@@ -785,6 +785,7 @@
                             <Button x:Name="StartingGear" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="StartingGearImage"/>
                             </Button>
+                            <!--<TextBlock x:Name="StartingGearHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="0" Visibility="Hidden"/>-->
                             <Image x:Name="StartingGearBar" Source="/Images/VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
                         </Grid>
                         <local:WorldGrid x:Name="StartingGearGrid" Grid.Column="1"/>
@@ -1037,7 +1038,7 @@
                 <local:Item x:Name="Watt" Content="{DynamicResource Watt}" Grid.Row="0" Grid.Column="5" Panel.ZIndex="0" Tag="PartnersAndGearGrid"/>
                 <local:Item x:Name="Sushie" Content="{DynamicResource Sushie}" Grid.Row="0" Grid.Column="6" Panel.ZIndex="0" Tag="PartnersAndGearGrid"/>
                 <local:Item x:Name="Spike" Content="{DynamicResource Spike}" Grid.Row="0" Grid.Column="7" Panel.ZIndex="0" Tag="PartnersAndGearGrid"/>
-                <local:Item x:Name="Report13" Content="{DynamicResource UltraStone}" Grid.Row="0" Grid.Column="8" Panel.ZIndex="0" Tag="PartnersAndGearGrid"/>
+                
 
                 <!-- Row 2 -->
                 <local:Item x:Name="Boots" Content="{DynamicResource Boots}" Grid.Row="1" Grid.Column="0" Tag="PartnersAndGearGrid"/>
@@ -1072,25 +1073,25 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Row 1 -->
-                <local:Item x:Name="FortressKey1" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="0" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="FortressKey2" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="1" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="FortressKey3" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="2" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="FortressKey4" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="3" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="FortressKeyA" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="0" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="FortressKeyB" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="1" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="FortressKeyC" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="2" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="FortressKeyD" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="3" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="PulseStone" Content="{DynamicResource PulseStone}" Grid.Row="0" Grid.Column="5" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="PyramidStone" Content="{DynamicResource PyramidStone}" Grid.Row="0" Grid.Column="6" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="DiamondStone" Content="{DynamicResource DiamondStone}" Grid.Row="0" Grid.Column="7" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="LunarStone" Content="{DynamicResource LunarStone}" Grid.Row="0" Grid.Column="8" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="RuinsKey1" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="9" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="RuinsKey2" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="10" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="RuinsKey3" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="11" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="RuinsKey4" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="12" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="RuinsKeyA" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="9" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="RuinsKeyB" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="10" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="RuinsKeyC" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="11" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="RuinsKeyD" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="12" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
                 
 
                 <!-- Row 2 -->
                 <local:Item x:Name="BooPortrait" Content="{DynamicResource BooPortrait}" Grid.Row="1" Grid.Column="1" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="TubbaKey1" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="2" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="TubbaKey2" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="3" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="TubbaKey3" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="4" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="TubbaCastleKeyA" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="2"  Tag="MajorItemsGrid"/>
+                <local:Item x:Name="TubbaCastleKeyB" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="3" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="TubbaCastleKeyC" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="4" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="ToyTrain" Content="{DynamicResource ToyTrain}" Grid.Row="1" Grid.Column="6" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="Cake" Content="{DynamicResource Cake}" Grid.Row="1" Grid.Column="7" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="JadeRaven" Content="{DynamicResource JadeRaven}" Grid.Row="1" Grid.Column="9" Tag="MajorItemsGrid"/>
@@ -1102,6 +1103,7 @@
                 <local:Item x:Name="MagicalSeed4" Content="{DynamicResource MagicalSeed4}" Grid.Row="2" Grid.Column="3" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="MagicalBean" Content="{DynamicResource MagicalBean}" Grid.Row="2" Grid.Column="4" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="FertileSoil" Content="{DynamicResource FertileSoil}" Grid.Row="2" Grid.Column="5" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="UltraStone" Content="{DynamicResource UltraStone}" Grid.Row="2" Grid.Column="12" Tag="MajorItemsGrid"/>
 
                 <!-- Row 3 -->
                 <local:Item x:Name="MiracleWater" Content="{DynamicResource MiracleWater}" Grid.Row="3" Grid.Column="0" Tag="MajorItemsGrid"/>
@@ -1111,7 +1113,11 @@
                 <local:Item x:Name="StarStone" Content="{DynamicResource StarStone}" Grid.Row="3" Grid.Column="4" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="RedKey" Content="{DynamicResource RedKey}" Grid.Row="3" Grid.Column="5" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="PalaceKey" Content="{DynamicResource PalaceKey}" Grid.Row="3" Grid.Column="6" Tag="MajorItemsGrid"/>
-                <local:Item x:Name="BowserKey" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="12" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="BowserKeyA" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="8" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="BowserKeyB" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="9" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="BowserKeyC" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="10" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="BowserKeyD" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="11" Tag="MajorItemsGrid"/>
+                <local:Item x:Name="BowserKeyE" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="12" Tag="MajorItemsGrid"/>
             </Grid>
 
             <Grid Name="MinorItemsGrid" Grid.Row="4" Visibility="Collapsed">
@@ -1138,40 +1144,40 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Row 1 -->
-                <!--<local:Item x:Name="FortressKey1" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="0" Panel.ZIndex="0"/>
-                <local:Item x:Name="FortressKey2" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="1" Panel.ZIndex="0"/>
-                <local:Item x:Name="FortressKey3" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="2" Panel.ZIndex="0"/>
-                <local:Item x:Name="FortressKey4" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="3" Panel.ZIndex="0"/>
-                <local:Item x:Name="PulseStone" Content="{DynamicResource PulseStone}" Grid.Row="0" Grid.Column="5" Panel.ZIndex="0"/>
-                <local:Item x:Name="PyramidStone" Content="{DynamicResource PyramidStone}" Grid.Row="0" Grid.Column="6" Panel.ZIndex="0"/>
-                <local:Item x:Name="DiamondStone" Content="{DynamicResource DiamondStone}" Grid.Row="0" Grid.Column="7" Panel.ZIndex="0"/>
-                <local:Item x:Name="LunarStone" Content="{DynamicResource LunarStone}" Grid.Row="0" Grid.Column="8" Panel.ZIndex="0"/>
-                <local:Item x:Name="RuinsKey1" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="9" Panel.ZIndex="0"/>
-                <local:Item x:Name="RuinsKey2" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="10" Panel.ZIndex="0"/>
-                <local:Item x:Name="RuinsKey3" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="11" Panel.ZIndex="0"/>
-                <local:Item x:Name="RuinsKey4" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="12" Panel.ZIndex="0"/>
+                <local:Item x:Name="Dolly" Content="{DynamicResource Dolly}" Grid.Row="0" Grid.Column="0" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="KooperShell" Content="{DynamicResource KooperShell}" Grid.Row="0" Grid.Column="1" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Letter1" Content="{DynamicResource Letter}" Grid.Row="0" Grid.Column="2" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Letter2" Content="{DynamicResource Letter}" Grid.Row="0" Grid.Column="3" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Letter3" Content="{DynamicResource Letter}" Grid.Row="0" Grid.Column="4" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Artifact" Content="{DynamicResource Artifact}" Grid.Row="0" Grid.Column="5" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BooRecord" Content="{DynamicResource Record}" Grid.Row="0" Grid.Column="6" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BooWeight" Content="{DynamicResource Weight}" Grid.Row="0" Grid.Column="7" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Calculator" Content="{DynamicResource Calculator}" Grid.Row="0" Grid.Column="8" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="FryingPan" Content="{DynamicResource FryingPan}" Grid.Row="0" Grid.Column="9" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Mailbag" Content="{DynamicResource Mailbag}" Grid.Row="0" Grid.Column="10" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Cookbook" Content="{DynamicResource Cookbook}" Grid.Row="0" Grid.Column="11" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Dictionary" Content="{DynamicResource Dictionary}" Grid.Row="0" Grid.Column="12" Tag="MinorItemsGrid"/>
 
+                <!-- Row 2 -->
+                <local:Item x:Name="VolcanoVase" Content="{DynamicResource VolcanoVase}" Grid.Row="1" Grid.Column="0" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="CrystalBerry" Content="{DynamicResource CrystalBerry}" Grid.Row="1" Grid.Column="1" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="WaterStone" Content="{DynamicResource WaterStone}" Grid.Row="1" Grid.Column="2" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Lyrics" Content="{DynamicResource Lyrics}" Grid.Row="1" Grid.Column="3" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="Melody" Content="{DynamicResource Melody}" Grid.Row="1" Grid.Column="4" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="RedBerry" Content="{DynamicResource RedBerry}" Grid.Row="1" Grid.Column="5" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="YellowBerry" Content="{DynamicResource YellowBerry}" Grid.Row="1" Grid.Column="6" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BlueBerryA" Content="{DynamicResource BlueBerry}" Grid.Row="1" Grid.Column="7" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BlueBerryB" Content="{DynamicResource BlueBerry}" Grid.Row="1" Grid.Column="8" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BubbleBerry" Content="{DynamicResource BubbleBerry}" Grid.Row="1" Grid.Column="9" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="StoreroomKey" Content="{DynamicResource StoreroomKey}" Grid.Row="1" Grid.Column="10" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="OddKey" Content="{DynamicResource OddKey}" Grid.Row="1" Grid.Column="11" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BlueKey" Content="{DynamicResource BlueKey}" Grid.Row="1" Grid.Column="12" Tag="MinorItemsGrid"/>
 
-                --><!-- Row 2 --><!--
-                <local:Item x:Name="BooPortrait" Content="{DynamicResource BooPortrait}" Grid.Row="1" Grid.Column="1" Panel.ZIndex="0"/>
-                <local:Item x:Name="TubbaKey1" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="2"/>
-                <local:Item x:Name="TubbaKey2" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="3"/>
-                <local:Item x:Name="TubbaKey3" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="4"/>
-                <local:Item x:Name="ToyTrain" Content="{DynamicResource ToyTrain}" Grid.Row="1" Grid.Column="6"/>
-                <local:Item x:Name="Cake" Content="{DynamicResource Cake}" Grid.Row="1" Grid.Column="7"/>
-                <local:Item x:Name="JadeRaven" Content="{DynamicResource JadeRaven}" Grid.Row="1" Grid.Column="9"/>
-                <local:Item x:Name="MagicalSeed1" Content="{DynamicResource MagicalSeed1}" Grid.Row="1" Grid.Column="6"/>
-                <local:Item x:Name="MagicalSeed2" Content="{DynamicResource MagicalSeed2}" Grid.Row="1" Grid.Column="7"/>
-                <local:Item x:Name="MagicalSeed3" Content="{DynamicResource MagicalSeed3}" Grid.Row="1" Grid.Column="8"/>
-                <local:Item x:Name="MagicalSeed4" Content="{DynamicResource MagicalSeed4}" Grid.Row="1" Grid.Column="9"/>
-                <local:Item x:Name="MagicalBean" Content="{DynamicResource MagicalBean}" Grid.Row="1" Grid.Column="10"/>
-                <local:Item x:Name="FertileSoil" Content="{DynamicResource FertileSoil}" Grid.Row="1" Grid.Column="11"/>
-
-                --><!-- Row 3 --><!--
-                <local:Item x:Name="MiracleWater" Content="{DynamicResource MiracleWater}" Grid.Row="2" Grid.Column="0"/>
-                <local:Item x:Name="WarehouseKey" Content="{DynamicResource WarehouseKey}" Grid.Row="2" Grid.Column="1"/>
-                <local:Item x:Name="Bucket" Content="{DynamicResource Bucket}" Grid.Row="2" Grid.Column="2"/>
-                <local:Item x:Name="Scarf" Content="{DynamicResource Scarf}" Grid.Row="2" Grid.Column="3"/>
+                <!-- Row 3 -->
+                <local:Item x:Name="PrisonKeyA" Content="{DynamicResource PrisonKey}" Grid.Row="2" Grid.Column="0" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="PrisonKeyB" Content="{DynamicResource PrisonKey}" Grid.Row="2" Grid.Column="1" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="CakeMix" Content="{DynamicResource CakeMix}" Grid.Row="2" Grid.Column="2" Tag="MinorItemsGrid"/>
+                <!--<local:Item x:Name="Scarf" Content="{DynamicResource Scarf}" Grid.Row="2" Grid.Column="3"/>
                 <local:Item x:Name="StarStone" Content="{DynamicResource StarStone}" Grid.Row="2" Grid.Column="4"/>
                 <local:Item x:Name="RedKey" Content="{DynamicResource RedKey}" Grid.Row="2" Grid.Column="5"/>
                 <local:Item x:Name="PalaceKey" Content="{DynamicResource PalaceKey}" Grid.Row="2" Grid.Column="6"/>
@@ -1180,9 +1186,9 @@
                 <local:Item x:Name="Master" Content="{DynamicResource Master}" Grid.Row="2" Grid.Column="9"/>
                 <local:Item x:Name="Final" Content="{DynamicResource Final}" Grid.Row="2" Grid.Column="10"/>
                 <local:Item x:Name="OnceMore" Content="{DynamicResource OnceMore}" Grid.Row="2" Grid.Column="11"/>
-                <local:Item x:Name="SecondChance" Content="{DynamicResource SecondChance}" Grid.Row="2" Grid.Column="12"/>
+                <local:Item x:Name="SecondChance" Content="{DynamicResource SecondChance}" Grid.Row="2" Grid.Column="12"/>-->
 
-                --><!-- Row 4 --><!--
+                <!-- Row 4 --><!--
                 <local:Item x:Name="TornPage1" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="0"/>
                 <local:Item x:Name="TornPage2" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="1"/>
                 <local:Item x:Name="TornPage3" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="2"/>
@@ -1222,38 +1228,33 @@
                 </Grid.ColumnDefinitions>
 
                 <!-- Row 1 -->
-                <!--<local:Item x:Name="FortressKey1" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="0" Panel.ZIndex="0"/>
-                <local:Item x:Name="FortressKey2" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="1" Panel.ZIndex="0"/>
-                <local:Item x:Name="FortressKey3" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="2" Panel.ZIndex="0"/>
-                <local:Item x:Name="FortressKey4" Content="{DynamicResource FortressKey}" Grid.Row="0" Grid.Column="3" Panel.ZIndex="0"/>
-                <local:Item x:Name="PulseStone" Content="{DynamicResource PulseStone}" Grid.Row="0" Grid.Column="5" Panel.ZIndex="0"/>
-                <local:Item x:Name="PyramidStone" Content="{DynamicResource PyramidStone}" Grid.Row="0" Grid.Column="6" Panel.ZIndex="0"/>
-                <local:Item x:Name="DiamondStone" Content="{DynamicResource DiamondStone}" Grid.Row="0" Grid.Column="7" Panel.ZIndex="0"/>
-                <local:Item x:Name="LunarStone" Content="{DynamicResource LunarStone}" Grid.Row="0" Grid.Column="8" Panel.ZIndex="0"/>
-                <local:Item x:Name="RuinsKey1" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="9" Panel.ZIndex="0"/>
-                <local:Item x:Name="RuinsKey2" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="10" Panel.ZIndex="0"/>
-                <local:Item x:Name="RuinsKey3" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="11" Panel.ZIndex="0"/>
-                <local:Item x:Name="RuinsKey4" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="12" Panel.ZIndex="0"/>
+                <local:Item x:Name="BumpAttack" Content="{DynamicResource BumpAttack}" Grid.Row="0" Grid.Column="0" Tag="BadgesGrid"/>
+                <local:Item x:Name="DodgeMaster" Content="{DynamicResource DodgeMaster}" Grid.Row="0" Grid.Column="1" Tag="BadgesGrid"/>
+                <local:Item x:Name="FeelingFine" Content="{DynamicResource FeelingFine}" Grid.Row="0" Grid.Column="2" Tag="BadgesGrid"/>
+                <local:Item x:Name="FPPlusA" Content="{DynamicResource FPPlus}" Grid.Row="0" Grid.Column="3" Tag="BadgesGrid"/>
+                <local:Item x:Name="FPPlusB" Content="{DynamicResource FPPlus}" Grid.Row="0" Grid.Column="4" Tag="BadgesGrid"/>
+                <local:Item x:Name="FPPlusC" Content="{DynamicResource FPPlus}" Grid.Row="0" Grid.Column="5" Tag="BadgesGrid"/>
+                <local:Item x:Name="HPPlusA" Content="{DynamicResource HPPlus}" Grid.Row="0" Grid.Column="6" Tag="BadgesGrid"/>
+                <local:Item x:Name="HPPlusB" Content="{DynamicResource HPPlus}" Grid.Row="0" Grid.Column="7" Tag="BadgesGrid"/>
+                <local:Item x:Name="HPPlusC" Content="{DynamicResource HPPlus}" Grid.Row="0" Grid.Column="8" Tag="BadgesGrid"/>
+                <local:Item x:Name="MegaJump" Content="{DynamicResource MegaJump}" Grid.Row="0" Grid.Column="9" Tag="BadgesGrid"/>
+                <local:Item x:Name="MegaQuake" Content="{DynamicResource MegaQuake}" Grid.Row="0" Grid.Column="10" Tag="BadgesGrid"/>
+                <local:Item x:Name="MegaSmash" Content="{DynamicResource MegaSmash}" Grid.Row="0" Grid.Column="11" Tag="BadgesGrid"/>
+                <local:Item x:Name="PowerPlusA" Content="{DynamicResource PowerPlus}" Grid.Row="0" Grid.Column="12" Tag="BadgesGrid"/>
 
 
-                -->
+                
                 <!-- Row 2 -->
-                <!--
-                <local:Item x:Name="BooPortrait" Content="{DynamicResource BooPortrait}" Grid.Row="1" Grid.Column="1" Panel.ZIndex="0"/>
-                <local:Item x:Name="TubbaKey1" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="2"/>
-                <local:Item x:Name="TubbaKey2" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="3"/>
-                <local:Item x:Name="TubbaKey3" Content="{DynamicResource TubbaKey}" Grid.Row="1" Grid.Column="4"/>
-                <local:Item x:Name="ToyTrain" Content="{DynamicResource ToyTrain}" Grid.Row="1" Grid.Column="6"/>
-                <local:Item x:Name="Cake" Content="{DynamicResource Cake}" Grid.Row="1" Grid.Column="7"/>
-                <local:Item x:Name="JadeRaven" Content="{DynamicResource JadeRaven}" Grid.Row="1" Grid.Column="9"/>
-                <local:Item x:Name="MagicalSeed1" Content="{DynamicResource MagicalSeed1}" Grid.Row="1" Grid.Column="6"/>
-                <local:Item x:Name="MagicalSeed2" Content="{DynamicResource MagicalSeed2}" Grid.Row="1" Grid.Column="7"/>
-                <local:Item x:Name="MagicalSeed3" Content="{DynamicResource MagicalSeed3}" Grid.Row="1" Grid.Column="8"/>
-                <local:Item x:Name="MagicalSeed4" Content="{DynamicResource MagicalSeed4}" Grid.Row="1" Grid.Column="9"/>
-                <local:Item x:Name="MagicalBean" Content="{DynamicResource MagicalBean}" Grid.Row="1" Grid.Column="10"/>
-                <local:Item x:Name="FertileSoil" Content="{DynamicResource FertileSoil}" Grid.Row="1" Grid.Column="11"/>
 
-                -->
+                <local:Item x:Name="PowerPlusB" Content="{DynamicResource PowerPlus}" Grid.Row="1" Grid.Column="0" Tag="BadgesGrid"/>
+                <local:Item x:Name="SpikeShield" Content="{DynamicResource SpikeShield}" Grid.Row="1" Grid.Column="1" Tag="BadgesGrid"/>
+                <local:Item x:Name="ItemPouchA" Content="{DynamicResource ItemPouch}" Grid.Row="1" Grid.Column="2" Tag="BadgesGrid"/>
+                <local:Item x:Name="ItemPouchB" Content="{DynamicResource ItemPouch}" Grid.Row="1" Grid.Column="3" Tag="BadgesGrid"/>
+                <local:Item x:Name="ItemPouchC" Content="{DynamicResource ItemPouch}" Grid.Row="1" Grid.Column="4" Tag="BadgesGrid"/>
+                <local:Item x:Name="ItemPouchD" Content="{DynamicResource ItemPouch}" Grid.Row="1" Grid.Column="5" Tag="BadgesGrid"/>
+                <local:Item x:Name="ItemPouchE" Content="{DynamicResource ItemPouch}" Grid.Row="1" Grid.Column="6" Tag="BadgesGrid"/>
+
+
                 <!-- Row 3 -->
                 <!--
                 <local:Item x:Name="MiracleWater" Content="{DynamicResource MiracleWater}" Grid.Row="2" Grid.Column="0"/>

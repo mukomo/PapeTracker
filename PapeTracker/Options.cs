@@ -543,12 +543,127 @@ namespace PapeTracker
             {
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
-                if (Path.GetExtension(files[0]).ToUpper() == ".HINT")
-                    LoadHints(files[0]);
-                else if (Path.GetExtension(files[0]).ToUpper() == ".PNACH")
-                    ParseSeed(files[0]);
-                else if (Path.GetExtension(files[0]).ToUpper() == ".ZIP")
-                    OpenKHSeed(files[0]);
+                //if (Path.GetExtension(files[0]).ToUpper() == ".HINT")
+                //    LoadHints(files[0]);
+                //else if (Path.GetExtension(files[0]).ToUpper() == ".PNACH")
+                //    ParseSeed(files[0]);
+                //else if (Path.GetExtension(files[0]).ToUpper() == ".ZIP")
+                //    OpenKHSeed(files[0]);
+                if (Path.GetExtension(files[0]).ToUpper().Equals(".TXT"))
+                {
+                    LoadValues(files[0]);
+                }
+            }
+        }
+
+        private void LoadValues(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog
+            {
+                DefaultExt = ".txt",
+                Filter = "PM64R Spoiler Log (*.txt)|*.txt",
+                Title = "Select Spoiler Log",
+                Multiselect = false
+            };
+            if (openFileDialog.ShowDialog() == true)
+            {
+                LoadValues(openFileDialog.FileName);
+            }
+        }
+
+        public void LoadValues(string filename)
+        {
+            StreamReader streamReader = new StreamReader(filename);
+            if(streamReader.EndOfStream)
+            {
+                MessageBox.Show("Invalid spoiler log. Make sure it's not empty.");
+                //HintText.Content = "Error loading hints";
+                streamReader.Close();
+                return;
+            }
+
+            string line1 = streamReader.ReadLine();
+            while (!line1.Trim().Equals(MainWindow.data.WorldsData["GoombaRegion"].SpoilerLogRegion))
+            {
+                line1 = streamReader.ReadLine();
+            }
+                //{
+                //    MessageBox.Show("Invalid spoiler log.");
+                //    streamReader.Close();
+                //    return;
+                //}
+
+            var regionDict = new Dictionary<string, List<Item>>();
+            string currentRegion = "GoombaRegion";
+            List<Item> itemsinRegion = new List<Item>();
+            while (!streamReader.EndOfStream)
+            {
+                string currentLine = streamReader.ReadLine();
+                if (currentLine.Length == 0 && currentRegion.Length > 0)
+                {
+                    regionDict.Add(currentRegion, itemsinRegion.ToList<Item>());
+                    currentRegion = "";
+                    itemsinRegion.Clear();
+                }
+                else if (currentRegion.Length > 0 && currentLine[0] == ' ')
+                {
+                    string item = currentLine.Split(':')[1].Trim();
+                    //if (item[item.Length - 1] == '*')
+                    //{
+                    //    item = item.Substring(0, item.Length - 1);
+                    //}
+                    try
+                    {
+                        Item matchingItem = data.Items.First(itemToUse => GetItemName(itemToUse).Equals(item));
+                        itemsinRegion.Add(matchingItem);
+                    }
+                    catch(Exception ex)
+                    {
+                        continue;
+                    }
+                }
+                else
+                {
+                    try
+                    {
+                        var matchingWorld = data.WorldsData.First(region => region.Value.SpoilerLogRegion.Equals(currentLine.Trim()));
+                        currentRegion = matchingWorld.Key;
+                    }
+                    catch (Exception ex)
+                    {
+                        continue;
+                    }
+                }
+            }
+            foreach (var world in data.WorldsData)
+            {
+                if (world.Value.hint is null) continue;
+                world.Value.hint.Text = "0";
+            }
+
+            foreach (var region in regionDict)
+            {
+                WorldData worldData = data.WorldsData[region.Key];
+                int itemValueTotal = 0;
+                foreach(Item item in region.Value)
+                {
+                    itemValueTotal += MainWindow.itemValues[item.Tag.ToString()];
+                }
+                if (worldData.hint is null) continue;
+                worldData.hint.Text= itemValueTotal.ToString();
+            }
+        }
+
+        private string GetItemName(Item item)
+        {
+            char lastChar = item.Name[item.Name.Length-1];
+            if (char.IsUpper(lastChar))
+            {
+                return item.Name.Substring(0, item.Name.Length - 1);
+            }
+            else
+            {
+                return item.Name;
             }
         }
 
@@ -727,7 +842,7 @@ namespace PapeTracker
                 {
                     Item item = worldData.worldGrid.Children[j] as Item;
                     worldData.worldGrid.Children.Remove(worldData.worldGrid.Children[j]);
-                    PartnersAndGearGrid.Children.Add(item);
+                    itemPools.First(p => p.Name.Equals(item.Tag)).Children.Add(item);
 
                     item.MouseDown -= item.Item_Return;
                     item.MouseEnter -= item.Report_Hover;
@@ -778,7 +893,7 @@ namespace PapeTracker
                 data.WorldsData[key].checkCount.Clear();
                 data.WorldsData[key].progress = 0;
             }
-            data.WorldsData["FlowerFields"].hinted = true;            
+            //data.WorldsData["FlowerFields"].hinted = true;            
 
             //broadcast.KoopaRegionProgression.SetResourceReference(ContentProperty, "");
             //broadcast.KoopaFortressProgression.SetResourceReference(ContentProperty, "");

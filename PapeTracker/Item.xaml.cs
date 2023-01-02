@@ -156,11 +156,12 @@ namespace PapeTracker
                     if(itemPool.Name.Equals(this.Tag))
                     {
                         itemPool.Children.Add(this);
+                        //parent.IncrementFound(this.Name.Remove(0, parent.Name.Length - 4),this);
                         break;
                     }
                 }
 
-                ((MainWindow)Application.Current.MainWindow).DecrementCollected();
+                ((MainWindow)Application.Current.MainWindow).DecrementCollected(MainWindow.itemValues[this.Tag.ToString()]);
 
                 MouseDown -= Item_Return;
 
