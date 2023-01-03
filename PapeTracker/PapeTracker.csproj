@@ -142,7 +142,6 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Resource Include="Fonts\HVD_Comic_Serif_Pro.otf" />
     <Resource Include="Fonts\PaperMarioFont.otf" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -189,7 +188,6 @@
   </ItemGroup>
   <ItemGroup>
 	<Resource Include="app.ico" />
-    <Resource Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\VerticalBarWhite.png" />

@@ -113,7 +113,7 @@
                             <Button Name ="GoombaRegion" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                                 <DynamicResource ResourceKey="GoombaRegionImage"/>
                             </Button>
-                            <TextBlock Name="GoombaRegionHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?"/>
+                            <TextBlock Name="GoombaRegionHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?"/>
                             <!--<Image Name="GoombaRegionHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="GoombaRegionBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
                         </Grid>
@@ -143,7 +143,7 @@
                             <Button Name="ToadTownTunnels" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                                 <DynamicResource ResourceKey="ToadTownTunnelsImage"/>
                             </Button>
-                            <TextBlock Name="ToadTownTunnelsHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?"/>
+                            <TextBlock Name="ToadTownTunnelsHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?"/>
                             <!--<Image Name="ToadTownTunnelsHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Visibility="Hidden"/>-->
                             <ContentControl Name="ToadTownTunnelsProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
                             <Image Name="ToadTownTunnelsBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -173,7 +173,7 @@
                             <Button Name="KoopaRegion" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="KoopaRegionImage"/>
                             </Button>
-                            <TextBlock x:Name="KoopaRegionHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" VerticalAlignment="Center" Grid.RowSpan="2" Text="?"/>
+                            <TextBlock x:Name="KoopaRegionHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" VerticalAlignment="Center" Grid.RowSpan="2" Text="?"/>
                             <!--<Image Name="KoopaRegionHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="KoopaRegionProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="KoopaRegionBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -204,7 +204,7 @@
                             <Button Name="MtRugged" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="MtRuggedImage"/>
                             </Button>
-                            <TextBlock x:Name="MtRuggedHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
+                            <TextBlock x:Name="MtRuggedHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
                             <!--<Image Name="MtRuggedHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="MtRuggedProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="MtRuggedBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -235,7 +235,7 @@
                             <Button Name="DryDryDesert" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="DryDryDesertImage"/>
                             </Button>
-                            <TextBlock x:Name="DryDryDesertHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
+                            <TextBlock x:Name="DryDryDesertHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
                             <!--<Image Name="DryDryDesertHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="DryDryDesertProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="DryDryDesertBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -266,7 +266,7 @@
                             <Button Name="ForeverForest" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="ForeverForestImage"/>
                             </Button>
-                            <TextBlock x:Name="ForeverForestHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?" Grid.RowSpan="2" VerticalAlignment="Center"/>
+                            <TextBlock x:Name="ForeverForestHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?" Grid.RowSpan="2" VerticalAlignment="Center"/>
                             <!--<Image Name="ForeverForestHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="ForeverForestProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="ForeverForestBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -297,7 +297,7 @@
                             <Button Name="GustyGulch" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="GustyGulchImage"/>
                             </Button>
-                            <TextBlock x:Name="GustyGulchHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?" VerticalAlignment="Center"/>
+                            <TextBlock x:Name="GustyGulchHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?" VerticalAlignment="Center"/>
                             <!--<Image Name="GustyGulchHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="GustyGulchProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="GustyGulchBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -328,7 +328,7 @@
                             <Button Name="ShyGuyToybox" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="ShyGuyToyboxImage"/>
                             </Button>
-                            <TextBlock x:Name="ShyGuyToyboxHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" VerticalAlignment="Center" Grid.RowSpan="2" Text="?"/>
+                            <TextBlock x:Name="ShyGuyToyboxHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" VerticalAlignment="Center" Grid.RowSpan="2" Text="?"/>
                             <!--<Image Name="ShyGuyToyboxHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="ShyGuyToyboxProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="ShyGuyToyboxBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -359,7 +359,7 @@
                             <Button Name="MtLavalava" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="MtLavalavaImage"/>
                             </Button>
-                            <TextBlock x:Name="MtLavalavaHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?" VerticalAlignment="Center" Grid.RowSpan="2"/>
+                            <TextBlock x:Name="MtLavalavaHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?" VerticalAlignment="Center" Grid.RowSpan="2"/>
                             <!--<Image Name="MtLavalavaHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="MtLavalavaProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="MtLavalavaBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -390,7 +390,7 @@
                             <Button Name="ShiverMountain" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="ShiverMountainImage"/>
                             </Button>
-                            <TextBlock Name="ShiverMountainHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="PaperMarioFont">?</TextBlock>
+                            <TextBlock Name="ShiverMountainHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}">?</TextBlock>
                             <!--<Image Name="ShiverMountainHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="ShiverMountainProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="ShiverMountainBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -420,7 +420,7 @@
                             <Button Name="BowserCastle" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="BowserCastleImage"/>
                             </Button>
-                            <TextBlock Name="BowserCastleHint" FontSize="32" Foreground="White"  Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?" />
+                            <TextBlock Name="BowserCastleHint" FontSize="32" Foreground="White"  Grid.Row="1" Grid.RowSpan="2" Grid.Column="1" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?" />
                             <!--<Image Name="ShiverMountainHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="ShiverMountainProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="BowserCastleBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -467,7 +467,7 @@
                             <Button Name ="ToadTown" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="ToadTownImage"/>
                             </Button>
-                            <TextBlock x:Name="ToadTownHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?" VerticalAlignment="Center" Grid.RowSpan="2"/>
+                            <TextBlock x:Name="ToadTownHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?" VerticalAlignment="Center" Grid.RowSpan="2"/>
                             <!--<Image Name="ToadTownHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="ToadTownBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
                         </Grid>
@@ -497,7 +497,7 @@
                             <Button Name ="ShootingStarSummit" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="ShootingStarSummitImage"/>
                             </Button>
-                            <TextBlock x:Name="ShootingStarSummitHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?" VerticalAlignment="Center" Grid.RowSpan="2"/>
+                            <TextBlock x:Name="ShootingStarSummitHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?" VerticalAlignment="Center" Grid.RowSpan="2"/>
                             <!--<Image Name="ToadTownHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="ShootingStarSummitBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
                         </Grid>
@@ -527,7 +527,7 @@
                             <Button Name="KoopaFortress" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                                 <DynamicResource ResourceKey="KoopaFortressImage"/>
                             </Button>
-                            <TextBlock x:Name="KoopaFortressHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
+                            <TextBlock x:Name="KoopaFortressHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
                             <!--<Image Name="KoopaFortressHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="KoopaFortressProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="KoopaFortressBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -558,7 +558,7 @@
                             <Button Name="DryDryOutpost" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                                 <DynamicResource ResourceKey="DryDryOutpostImage"/>
                             </Button>
-                            <TextBlock x:Name="DryDryOutpostHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
+                            <TextBlock x:Name="DryDryOutpostHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
                             <!--<Image Name="DryDryOutpostHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <ContentControl Name="DryDryOutpostProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>
                             <Image Name="DryDryOutpostBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -589,7 +589,7 @@
                             <Button Name="DryDryRuins" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                                 <DynamicResource ResourceKey="DryDryRuinsImage"/>
                             </Button>
-                            <TextBlock x:Name="DryDryRuinsHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
+                            <TextBlock x:Name="DryDryRuinsHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
                             <!--<Image Name="DryDryRuinsHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="DryDryRuinsProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="DryDryRuinsBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -620,7 +620,7 @@
                             <Button Name="BooMansion" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                                 <DynamicResource ResourceKey="BooMansionImage"/>
                             </Button>
-                            <TextBlock x:Name="BooMansionHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
+                            <TextBlock x:Name="BooMansionHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
                             <!--<Image Name="BooMansionHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="BooMansionProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="BooMansionBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -651,7 +651,7 @@
                             <Button Name="TubbaCastle" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" FocusVisualStyle="{x:Null}" Grid.RowSpan="2" Grid.ColumnSpan="2">
                                 <DynamicResource ResourceKey="TubbaCastleImage"/>
                             </Button>
-                            <TextBlock x:Name="TubbaCastleHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" VerticalAlignment="Center" Grid.RowSpan="2" Text="?"/>
+                            <TextBlock x:Name="TubbaCastleHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" VerticalAlignment="Center" Grid.RowSpan="2" Text="?"/>
                             <!--<Image Name="TubbaCastleHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="TubbaCastleProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="TubbaCastleBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -682,7 +682,7 @@
                             <Button Name="JadeJungle" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="JadeJungleImage"/>
                             </Button>
-                            <TextBlock x:Name="JadeJungleHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Text="?" Grid.RowSpan="2" VerticalAlignment="Center"/>
+                            <TextBlock x:Name="JadeJungleHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Text="?" Grid.RowSpan="2" VerticalAlignment="Center"/>
                             <!--<Image Name="JadeJungleHint" Source="Images\Numbers\_QuestionMark.png" IsHitTestVisible="False" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <!--<ContentControl Name="JadeJungleProgression" IsHitTestVisible="False" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"/>-->
                             <Image Name="JadeJungleBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
@@ -713,7 +713,7 @@
                             <Button Name="FlowerFields" Background="Transparent" PreviewMouseDown="OnMouseDown" BorderThickness="0" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="FlowerFieldsImage"/>
                             </Button>
-                            <TextBlock x:Name="FlowerFieldsHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
+                            <TextBlock x:Name="FlowerFieldsHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
                             <Image Name="FlowerFieldsBar" Source="Images\VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
                         </Grid>
                         <local:WorldGrid x:Name="FlowerFieldsGrid" Grid.Column="1"/>
@@ -742,7 +742,7 @@
                             <Button x:Name="CrystalPalace" Background="Transparent" PreviewMouseDown="OnMouseDown" BorderThickness="0" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="CrystalPalaceImage"/>
                             </Button>
-                            <TextBlock x:Name="CrystalPalaceHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
+                            <TextBlock x:Name="CrystalPalaceHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="?"/>
                             <Image x:Name="CrystalPalaceBar" Source="/Images/VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
                         </Grid>
                         <local:WorldGrid x:Name="CrystalPalaceGrid" Grid.Column="1"/>
@@ -770,7 +770,7 @@
                             <Button x:Name="StartingGear" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
                                 <DynamicResource ResourceKey="StartingGearImage"/>
                             </Button>
-                            <!--<TextBlock x:Name="StartingGearHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="PaperMarioFont" Grid.RowSpan="2" VerticalAlignment="Center" Text="0" Visibility="Hidden"/>-->
+                            <!--<TextBlock x:Name="StartingGearHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="0" Visibility="Hidden"/>-->
                             <Image x:Name="StartingGearBar" Source="/Images/VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
                         </Grid>
                         <local:WorldGrid x:Name="StartingGearGrid" Grid.Column="1"/>
@@ -832,12 +832,12 @@
                     <Image Source="Images/Pape/Stars/PM_Kalmar.png"/>
                 </Button>
 
-                <TextBlock Name="StarsNeededName" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="8" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="PaperMarioFont" Text="Stars:"/>
-                <TextBlock Name="StarsNeeded" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="13" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="PaperMarioFont" Text="7" />
-                <TextBlock Name="PointsCollectedName" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="14" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="PaperMarioFont" Text="PC" />
-                <TextBlock Name="Collected" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="15" Grid.ColumnSpan="3" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="PaperMarioFont" Text="0"/>
-                <TextBlock Name="CollectedBar" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="PaperMarioFont" Text="1" Visibility="Hidden"/>
-                <TextBlock Name="CheckTotal" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="17" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="PaperMarioFont" Text="1" Visibility="Hidden"/>
+                <TextBlock Name="StarsNeededName" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="8" Grid.ColumnSpan="5" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{DynamicResource PaperMarioFont}" Text="Stars:"/>
+                <TextBlock Name="StarsNeeded" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="13" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{DynamicResource PaperMarioFont}" Text="7" />
+                <TextBlock Name="PointsCollectedName" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="14" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{DynamicResource PaperMarioFont}" Text="PC" />
+                <TextBlock Name="Collected" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="15" Grid.ColumnSpan="3" HorizontalAlignment="Right" VerticalAlignment="Center" FontFamily="{DynamicResource PaperMarioFont}" Text="0"/>
+                <TextBlock Name="CollectedBar" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="16" HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{DynamicResource PaperMarioFont}" Text="1" Visibility="Hidden"/>
+                <TextBlock Name="CheckTotal" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="17" HorizontalAlignment="Left" VerticalAlignment="Center" FontFamily="{DynamicResource PaperMarioFont}" Text="1" Visibility="Hidden"/>
             </Grid>
 
             <!-- Drive Forms -->
@@ -984,10 +984,10 @@
                     <ColumnDefinition Width="1*"/>
                 </Grid.ColumnDefinitions>
 
-                <Button Name="PartnersAndGearGridSwapButton" Content="Partners" Tag="PartnersAndGearGrid" Click="ItemGridSwap" FontSize="24" Foreground="White" BorderThickness="0" FontFamily="PaperMarioFont" Grid.Column="0" Background="Transparent"/>
-                <Button Name="MajorItemsGridSwapButton" Content="Major Items" Tag="MajorItemsGrid" Click="ItemGridSwap" FontSize="24" Foreground="White" BorderThickness="0" FontFamily="PaperMarioFont" Grid.Column="1" Background="Transparent"/>
-                <Button Name="MinorItemsGridSwapButton" Content="Minor Items" Tag="MinorItemsGrid" Click="ItemGridSwap" FontSize="24" Foreground="White" BorderThickness="0" FontFamily="PaperMarioFont" Grid.Column="2" Background="Transparent"/>
-                <Button Name="BadgesGridSwapButton" Content="Badges" Tag="BadgesGrid" Click="ItemGridSwap" FontSize="24" Foreground="White" BorderThickness="0" FontFamily="PaperMarioFont" Grid.Column="3" Background="Transparent"/>
+                <Button Name="PartnersAndGearGridSwapButton" Content="Partners" Tag="PartnersAndGearGrid" Click="ItemGridSwap" FontSize="24" Foreground="White" BorderThickness="0" FontFamily="{DynamicResource PaperMarioFont}" Grid.Column="0" Background="Transparent"/>
+                <Button Name="MajorItemsGridSwapButton" Content="Major Items" Tag="MajorItemsGrid" Click="ItemGridSwap" FontSize="24" Foreground="White" BorderThickness="0" FontFamily="{DynamicResource PaperMarioFont}" Grid.Column="1" Background="Transparent"/>
+                <Button Name="MinorItemsGridSwapButton" Content="Minor Items" Tag="MinorItemsGrid" Click="ItemGridSwap" FontSize="24" Foreground="White" BorderThickness="0" FontFamily="{DynamicResource PaperMarioFont}" Grid.Column="2" Background="Transparent"/>
+                <Button Name="BadgesGridSwapButton" Content="Badges" Tag="BadgesGrid" Click="ItemGridSwap" FontSize="24" Foreground="White" BorderThickness="0" FontFamily="{DynamicResource PaperMarioFont}" Grid.Column="3" Background="Transparent"/>
             </Grid>
             
             <!-- Items -->
