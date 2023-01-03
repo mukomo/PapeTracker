@@ -767,57 +767,57 @@ namespace PapeTracker
 
         private void LoadSettings(string settings)
         {
-            bool[] newsettings = new bool[10];
+            //bool[] newsettings = new bool[10];
 
-            string[] settinglist = settings.Split('-');
-            foreach (string setting in settinglist)
-            {
-                string trimmed = setting.Trim();
-                switch (trimmed)
-                {
-                    case "Promise Charm":
-                        newsettings[0] = true;
-                        break;
-                    case "Secret Ansem Reports":
-                        newsettings[1] = true;
-                        break;
-                    case "Second Chance & Once More":
-                        newsettings[2] = true;
-                        break;
-                    case "Torn Pages":
-                        newsettings[3] = true;
-                        break;
-                    case "Cure":
-                        newsettings[4] = true;
-                        break;
-                    case "Final Form":
-                        newsettings[5] = true;
-                        break;
-                    case "Sora's Heart":
-                        newsettings[6] = true;
-                        break;
-                    case "Simulated Twilight Town":
-                        newsettings[7] = true;
-                        break;
-                    case "100 Acre Wood":
-                        newsettings[8] = true;
-                        break;
-                    case "ShiverMountain":
-                        newsettings[9] = true;
-                        break;
-                }
-            }
+            //string[] settinglist = settings.Split('-');
+            //foreach (string setting in settinglist)
+            //{
+            //    string trimmed = setting.Trim();
+            //    switch (trimmed)
+            //    {
+            //        case "Promise Charm":
+            //            newsettings[0] = true;
+            //            break;
+            //        case "Secret Ansem Reports":
+            //            newsettings[1] = true;
+            //            break;
+            //        case "Second Chance & Once More":
+            //            newsettings[2] = true;
+            //            break;
+            //        case "Torn Pages":
+            //            newsettings[3] = true;
+            //            break;
+            //        case "Cure":
+            //            newsettings[4] = true;
+            //            break;
+            //        case "Final Form":
+            //            newsettings[5] = true;
+            //            break;
+            //        case "Sora's Heart":
+            //            newsettings[6] = true;
+            //            break;
+            //        case "Simulated Twilight Town":
+            //            newsettings[7] = true;
+            //            break;
+            //        case "100 Acre Wood":
+            //            newsettings[8] = true;
+            //            break;
+            //        case "ShiverMountain":
+            //            newsettings[9] = true;
+            //            break;
+            //    }
+            //}
 
-            PromiseCharmToggle(newsettings[0]);
-            ReportsToggle(newsettings[1]);
-            AbilitiesToggle(newsettings[2]);
-            TornPagesToggle(newsettings[3]);
-            CureToggle(newsettings[4]);
-            FinalFormToggle(newsettings[5]);
-            SoraHeartToggle(newsettings[6]);
-            SimulatedToggle(newsettings[7]);
-            ForeverForestToggle(newsettings[8]);
-            ShiverMountainToggle(newsettings[9]);
+            //PromiseCharmToggle(newsettings[0]);
+            //ReportsToggle(newsettings[1]);
+            //AbilitiesToggle(newsettings[2]);
+            //TornPagesToggle(newsettings[3]);
+            //CureToggle(newsettings[4]);
+            //FinalFormToggle(newsettings[5]);
+            //SoraHeartToggle(newsettings[6]);
+            //SimulatedToggle(newsettings[7]);
+            //ForeverForestToggle(newsettings[8]);
+            //ShiverMountainToggle(newsettings[9]);
 
         }
 
@@ -1100,7 +1100,7 @@ namespace PapeTracker
             {
                 ModeDisplay.Header = "Alt Hints Mode";
                 data.mode = mode;
-                ReportsToggle(false);
+                //ReportsToggle(false);
                 //ReportRow.Height = new GridLength(0, GridUnitType.Star);
             }
             else if (mode == Mode.Hints || mode == Mode.OpenKHHints)
@@ -1231,7 +1231,7 @@ namespace PapeTracker
                                         data.reportInformation.Add(new Tuple<string, int>(world, int.Parse(count)));
                                         data.reportLocations.Add(location);
                                     }
-                                    ReportsToggle(true);
+                                    //ReportsToggle(true);
                                     data.hintsLoaded = true;
                                     //HintText.Content = "Hints Loaded";
 

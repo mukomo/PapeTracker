@@ -26,96 +26,36 @@ namespace PapeTracker.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool PromiseCharm {
+        public bool FryingPan {
             get {
-                return ((bool)(this["PromiseCharm"]));
+                return ((bool)(this["FryingPan"]));
             }
             set {
-                this["PromiseCharm"] = value;
+                this["FryingPan"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool AnsemReports {
+        public bool BlueHouse {
             get {
-                return ((bool)(this["AnsemReports"]));
+                return ((bool)(this["BlueHouse"]));
             }
             set {
-                this["AnsemReports"] = value;
+                this["BlueHouse"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool Abilities {
+        public bool BowserCastle {
             get {
-                return ((bool)(this["Abilities"]));
+                return ((bool)(this["BowserCastle"]));
             }
             set {
-                this["Abilities"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool TornPages {
-            get {
-                return ((bool)(this["TornPages"]));
-            }
-            set {
-                this["TornPages"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool FinalForm {
-            get {
-                return ((bool)(this["FinalForm"]));
-            }
-            set {
-                this["FinalForm"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool Simulated {
-            get {
-                return ((bool)(this["Simulated"]));
-            }
-            set {
-                this["Simulated"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool HundredAcre {
-            get {
-                return ((bool)(this["HundredAcre"]));
-            }
-            set {
-                this["HundredAcre"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ShiverMountain {
-            get {
-                return ((bool)(this["ShiverMountain"]));
-            }
-            set {
-                this["ShiverMountain"] = value;
+                this["BowserCastle"] = value;
             }
         }
         
@@ -140,42 +80,6 @@ namespace PapeTracker.Properties {
             }
             set {
                 this["WindowY"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool Cure {
-            get {
-                return ((bool)(this["Cure"]));
-            }
-            set {
-                this["Cure"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool Simple {
-            get {
-                return ((bool)(this["Simple"]));
-            }
-            set {
-                this["Simple"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool SoraHeart {
-            get {
-                return ((bool)(this["SoraHeart"]));
-            }
-            set {
-                this["SoraHeart"] = value;
             }
         }
         
@@ -265,42 +169,6 @@ namespace PapeTracker.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool WorldProgress {
-            get {
-                return ((bool)(this["WorldProgress"]));
-            }
-            set {
-                this["WorldProgress"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Orb {
-            get {
-                return ((bool)(this["Orb"]));
-            }
-            set {
-                this["Orb"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Alt {
-            get {
-                return ((bool)(this["Alt"]));
-            }
-            set {
-                this["Alt"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
         public bool TopMost {
             get {
@@ -320,18 +188,6 @@ namespace PapeTracker.Properties {
             }
             set {
                 this["BroadcastStartup"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool FormsGrowth {
-            get {
-                return ((bool)(this["FormsGrowth"]));
-            }
-            set {
-                this["FormsGrowth"] = value;
             }
         }
     }

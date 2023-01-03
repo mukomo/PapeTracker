@@ -6,7 +6,7 @@
              Exit="App_Exit">
     <Application.Resources>
         <ResourceDictionary>
-            <FontFamily x:Key="HVD_Comic_Serif_Pro">pack://application:,,,/Fonts/#PaperMarioFont</FontFamily>
+            <FontFamily x:Key="PaperMarioFont">pack://application:,,,/Fonts/#PaperMarioFont</FontFamily>
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Dictionary1.xaml" />
             </ResourceDictionary.MergedDictionaries>

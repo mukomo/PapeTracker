@@ -49,7 +49,7 @@ namespace PapeTracker
             data.WorldsData.Add("ToadTownTunnels", new WorldData(ToadTownTunnelsTop, ToadTownTunnels, null, ToadTownTunnelsHint, ToadTownTunnelsGrid, ToadTownTunnelsBar, false, "Toad Town Tunnels:"));
             data.WorldsData.Add("ShootingStarSummit", new WorldData(ShootingStarSummitTop, ShootingStarSummit, null, ShootingStarSummitHint, ShootingStarSummitGrid, ShootingStarSummitBar, false, "Shooting Star Summit:"));
             data.WorldsData.Add("KoopaRegion", new WorldData(KoopaRegionTop, KoopaRegion, null, KoopaRegionHint, KoopaRegionGrid, KoopaRegionBar, false, "Koopa Region:"));
-            data.WorldsData.Add("KoopaFortress", new WorldData(KoopaFortressTop, KoopaFortress, null, KoopaFortressHint, KoopaFortressGrid, KoopaFortressBar, false, "Koopa Fortress:"));
+            data.WorldsData.Add("KoopaFortress", new WorldData(KoopaFortressTop, KoopaFortress, null, KoopaFortressHint, KoopaFortressGrid, KoopaFortressBar, false, "Koopa Bros Fortress:"));
             data.WorldsData.Add("MtRugged", new WorldData(MtRuggedTop, MtRugged, null, MtRuggedHint, MtRuggedGrid, MtRuggedBar, false, "Mt Rugged:"));
             data.WorldsData.Add("DryDryOutpost", new WorldData(DryDryOutpostTop, DryDryOutpost, null, DryDryOutpostHint, DryDryOutpostGrid, DryDryOutpostBar, false, "Dry Dry Outpost"));
             data.WorldsData.Add("DryDryDesert", new WorldData(DryDryDesertTop, DryDryDesert, null, DryDryDesertHint, DryDryDesertGrid, DryDryDesertBar, false, "Dry Dry Desert:"));
@@ -115,56 +115,20 @@ namespace PapeTracker
 
         private void InitOptions()
         {
-            PromiseCharmOption.IsChecked = Properties.Settings.Default.PromiseCharm;
+            FryingPanOption.IsChecked = Properties.Settings.Default.FryingPan;
             //HandleItemToggle(PromiseCharmOption.IsChecked, PromiseCharm, true);
 
-            ReportsOption.IsChecked = Properties.Settings.Default.AnsemReports;
+            BowserCastleOption.IsChecked = Properties.Settings.Default.BowserCastle;
             for (int i = 0; i < data.Reports.Count; ++i)
             {
-                HandleItemToggle(ReportsOption.IsChecked, data.Reports[i], true);
+                HandleItemToggle(BowserCastleOption.IsChecked, data.Reports[i], true);
             }
 
-            AbilitiesOption.IsChecked = Properties.Settings.Default.Abilities;
+            BlueHouseOption.IsChecked = Properties.Settings.Default.BlueHouse;
             //HandleItemToggle(AbilitiesOption.IsChecked, OnceMore, true);
             //HandleItemToggle(AbilitiesOption.IsChecked, SecondChance, true);
 
-            TornPagesOption.IsChecked = Properties.Settings.Default.TornPages;
-            for (int i = 0; i < data.TornPages.Count; ++i)
-            {
-                HandleItemToggle(TornPagesOption.IsChecked, data.TornPages[i], true);
-            }
-
-            CureOption.IsChecked = Properties.Settings.Default.Cure;
-            //HandleItemToggle(CureOption.IsChecked, Cure1, true);
-            //HandleItemToggle(CureOption.IsChecked, Cure2, true);
-            //HandleItemToggle(CureOption.IsChecked, Cure3, true);
-
-            FinalFormOption.IsChecked = Properties.Settings.Default.FinalForm;
-            //HandleItemToggle(FinalFormOption.IsChecked, Final, true);
-
-            SimpleOption.IsChecked = Properties.Settings.Default.Simple;
-            if (SimpleOption.IsChecked)
-                SimpleToggle(null, null);
-
-            //OrbOption.IsChecked = Properties.Settings.Default.Orb;
-            //if (OrbOption.IsChecked)
-            //    OrbToggle(null, null);
-
-            //AltOption.IsChecked = Properties.Settings.Default.Alt;
-            //if (AltOption.IsChecked)
-            //    AltToggle(null, null);
-
-            WorldProgressOption.IsChecked = Properties.Settings.Default.WorldProgress;
-            WorldProgressToggle(null, null);
-
-            SoraHeartOption.IsChecked = Properties.Settings.Default.SoraHeart;
-            SoraHeartToggle(SoraHeartOption.IsChecked);
-            SimulatedOption.IsChecked = Properties.Settings.Default.Simulated;
-            SimulatedToggle(SimulatedOption.IsChecked);
-            ForeverForestOption.IsChecked = Properties.Settings.Default.HundredAcre;
-            ForeverForestToggle(ForeverForestOption.IsChecked);
-            ShiverMountainOption.IsChecked = Properties.Settings.Default.ShiverMountain;
-            ShiverMountainToggle(ShiverMountainOption.IsChecked);
+            
 
             DragAndDropOption.IsChecked = Properties.Settings.Default.DragDrop;
             DragDropToggle(null, null);
@@ -172,11 +136,8 @@ namespace PapeTracker
             TopMostOption.IsChecked = Properties.Settings.Default.TopMost;
             TopMostToggle(null, null);
 
-            BroadcastStartupOption.IsChecked = Properties.Settings.Default.BroadcastStartup;
-            BroadcastStartupToggle(null, null);
-
-            FormsGrowthOption.IsChecked = Properties.Settings.Default.FormsGrowth;
-            FormsGrowthToggle(null, null);
+            //BroadcastStartupOption.IsChecked = Properties.Settings.Default.BroadcastStartup;
+            //BroadcastStartupToggle(null, null);
 
             Top = Properties.Settings.Default.WindowY;
             Left = Properties.Settings.Default.WindowX;
@@ -241,7 +202,7 @@ namespace PapeTracker
 
         private void Window_Closing(object sender, CancelEventArgs e)
         {
-            Save("kh2fm-tracker-autosave.txt");
+            Save("pape-tracker-autosave.txt");
             Properties.Settings.Default.Save();
             broadcast.canClose = true;
             broadcast.Close();
@@ -374,6 +335,11 @@ namespace PapeTracker
             {
                 button.Opacity = 0.25;
             }
+        }
+
+        private void FryingPanOption_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
