@@ -20,7 +20,7 @@ Icons used in this tracker come from the Mario Wiki page on [Paper Mario](https:
   * Resets the tracker to its default state 
   
 ## Toggles
-  * Loading Hints will automatically toggle the settings that the hint file was made with
+  * Currently not implemented. Wait for a future release
   
 ***
 
@@ -29,11 +29,30 @@ Icons used in this tracker come from the Mario Wiki page on [Paper Mario](https:
   
 ## How To Use
 
+You MUST first drag a spoiler log file into the tracker for proper function.
+
 Drag an item to the location that you found it in. Alternatively highlight worlds by clicking on them and then double click on items to mark them as collected in that world. Clicking on a marked item will return it to the item pool. (if not using drag and drop controls then only a single click on an item is required)
 
-The question marks connected to each world denote the number of important checks in a world. If hints are loaded these will be set automatically as reports are tracked. If hints are not loaded they can be increased or decreased with the scroll wheel or by selecting a world and using page up / page down
+The question marks indicate a spoiler log has not been loaded. When numbers appear the log was read. Regional point counts will load based on which items are found in them.
 
-If a hint file is loaded into the tracker reports must be tracked correctly. Incorrectly tracking a report 3 times will lock you out of tracking that report and receiving its hint. Hovering over already tracked reports will also display their hint text.
+* A partner or hammer/boots upgrade is worth 9 points
+* Chapter required items plus the Ultra Stone are worth 7 points
+* Other key items that aren't required for chapter clearing but can give checks are worth 5 points
+  * Every instance of these items will give the points (items such as the colored berries or cake mix appear multiple times, though you don't need all of them for progress)
+* Below items (badges and item pouches) are worth 3 points
+  * Item Pouch (x5)
+  * FP Plus (x3)
+  * HP Plus (x3)
+  * Power Plus (x2)
+  * Spike Shield
+  * Feeling Fine
+  * Dodge Master
+  * Mega Quake
+  * Mega Smash
+  * Mega Jump
+  * Bump Attack
+
+A new feature to this tracker is that regions with 0 points left have their numbers turn blue. This leads to quick visual updates for viewers.
 
 ## Thanks
 
