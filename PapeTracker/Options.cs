@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Serialization;
+using System.Windows.Media;
 
 namespace PapeTracker
 {
@@ -639,6 +640,7 @@ namespace PapeTracker
             {
                 if (world.Value.hint is null) continue;
                 world.Value.hint.Text = "0";
+                world.Value.hint.Foreground = Brushes.Teal;
             }
 
             foreach (var region in regionDict)
@@ -650,7 +652,8 @@ namespace PapeTracker
                     itemValueTotal += MainWindow.itemValues[item.Tag.ToString()];
                 }
                 if (worldData.hint is null) continue;
-                worldData.hint.Text= itemValueTotal.ToString();
+                worldData.hint.Text = itemValueTotal.ToString();
+                if (itemValueTotal != 0) worldData.hint.Foreground = Brushes.White;
             }
         }
 

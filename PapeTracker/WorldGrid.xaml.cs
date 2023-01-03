@@ -144,6 +144,7 @@ namespace PapeTracker
                 {
                     currentWorldValue += itemValue;
                     data.hint.Text = currentWorldValue.ToString();
+                    if (currentWorldValue != 0) data.hint.Foreground = Brushes.White;
                 }
             }
         }
@@ -160,6 +161,7 @@ namespace PapeTracker
                 {
                     currentWorldValue -= itemValue;
                     data.hint.Text = currentWorldValue.ToString();
+                    if (currentWorldValue == 0) data.hint.Foreground = Brushes.Teal;
                 }
             }
         }
