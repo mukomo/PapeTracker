@@ -1,0 +1,132 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:PapeTracker">
+
+	<ControlTemplate x:Key="DefaultButton" TargetType="{x:Type ButtonBase}">
+		<ContentPresenter Content="{TemplateBinding Content}"/>
+	</ControlTemplate>
+
+	<!--Partners and Gear Upgrades: 9 pts-->
+    <Image x:Key="Goombario" Source="Images\Pape\Partners\Goombario.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Kooper" Source="Images\Pape\Partners\Kooper.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Bombette" Source="Images\Pape\Partners\Bombette.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Parakarry" Source="Images\Pape\Partners\Parakarry.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Bow" Source="Images\Pape\Partners\Bow.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Watt" Source="Images\Pape\Partners\Watt.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Sushie" Source="Images\Pape\Partners\Sushie.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Spike" Source="Images\Pape\Partners\Lakilester.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Boots" Source="Images\Pape\Gear\PM_Boots.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="SuperBoots" Source="Images\Pape\Gear\PM_SuperBoots.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="UltraBoots" Source="Images\Pape\Gear\PM_UltraBoots.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="Hammer" Source="Images\Pape\Gear\PM_Hammer.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="SuperHammer" Source="Images\Pape\Gear\PM_SuperHammer.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="UltraHammer" Source="Images\Pape\Gear\PM_UltraHammer.png"  x:Shared="false" Tag="PartnersGear"/>
+    <Image x:Key="UltraStone" Source="Images\Pape\KeyItems\PM_UltraStone.gif"  x:Shared="false" Tag="PartnersGear"/>
+    
+    <!--Required Items for Chapter Progression: 7 pts-->
+	<Image x:Key="FortressKey" Source="Images\Pape\KeyItems\PM_FortressKey.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="PulseStone" Source="Images\Pape\KeyItems\PM_PulseStone.gif" x:Shared="false" Tag="Major"/>
+	<Image x:Key="PyramidStone" Source="Images\Pape\KeyItems\PM_PyramidStone.gif" x:Shared="false" Tag="Major"/>
+    <Image x:Key="DiamondStone" Source="Images\Pape\KeyItems\PM_DiamondStone.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="LunarStone" Source="Images\Pape\KeyItems\PM_LunarStone.gif" x:Shared="false" Tag="Major"/>
+    <Image x:Key="RuinsKey" Source="Images\Pape\KeyItems\PM_Ruins_Key.png"  Tag="Major"/>
+    <Image x:Key="BooPortrait" Source="Images\Pape\KeyItems\PM_Boo'sPortrait.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="TubbaKey" Source="Images\Pape\KeyItems\PM_Tubba_Blubba_Castle_Key.png" Tag="Major"/>
+    <Image x:Key="ToyTrain" Source="Images\Pape\KeyItems\PM_ToyTrain.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="Cake" Source="Images\Pape\KeyItems\PM_Cake.gif" x:Shared="false" Tag="Major"/>
+    <Image x:Key="JadeRaven" Source="Images\Pape\KeyItems\PM_JadeRaven.png" x:Shared="false" Tag="Major"/>
+
+    <Image x:Key="MagicalSeed1" Source="Images\Pape\KeyItems\PM_MagicalSeed1.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="MagicalSeed2" Source="Images\Pape\KeyItems\PM_MagicalSeed2.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="MagicalSeed3" Source="Images\Pape\KeyItems\PM_MagicalSeed3.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="MagicalSeed4" Source="Images\Pape\KeyItems\PM_MagicalSeed4.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="MagicalBean" Source="Images\Pape\KeyItems\PM_MagicalBean.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="FertileSoil" Source="Images\Pape\KeyItems\PM_Fertile_Soil.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="MiracleWater" Source="Images\Pape\KeyItems\PM_MiracleWater.png" x:Shared="false" Tag="Major"/>
+    <StackPanel x:Key="WarehouseKey" VerticalAlignment="Center" x:Shared="false" Tag="Major">
+        <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
+        <TextBlock Margin="20,-20,0,0" Text="W" FontSize="24" Foreground="White" FontFamily="{DynamicResource PaperMarioFont}"/>
+    </StackPanel>
+    <Image x:Key="Bucket" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="Scarf" Source="Images\Pape\KeyItems\PM_Scarf.gif" x:Shared="false" Tag="Major"/>
+    <Image x:Key="StarStone" Source="Images\Pape\KeyItems\PM_Star_Stone.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="RedKey" Source="Images\Pape\KeyItems\PM_Red_Key.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="PalaceKey" Source="Images\Pape\KeyItems\PM_Palace_Key.png" x:Shared="false" Tag="Major"/>
+    <Image x:Key="BowserCastleKey" Source="Images\Pape\KeyItems\PM_Bowser_Castle_Key.png" x:Shared="false" Tag="Major"/>
+    
+    <!--Important Items for Other Checks: 5 pts-->
+    <Image x:Key="Dolly" Source="Images\Pape\MinorItems\PM_PeachDoll.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="KooperShell" Source="Images\Pape\MinorItems\PM_KooperShell.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Letter" Source="Images\Pape\Letters\PM_Letter.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Artifact" Source="Images\Pape\MinorItems\PM_Artifact.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Record" Source="Images\Pape\MinorItems\PM_Record.gif" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Weight" Source="Images\Pape\MinorItems\PM_Weight.gif" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Calculator" Source="Images\Pape\MinorItems\PM_Calculator.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="FryingPan" Source="Images\Pape\MinorItems\PM_FryingPan.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Mailbag" Source="Images\Pape\MinorItems\PM_Mailbag.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Cookbook" Source="Images\Pape\MinorItems\PM_CookBook.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Dictionary" Source="Images\Pape\MinorItems\PM_Dictionary.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="VolcanoVase" Source="Images\Pape\MinorItems\PM_VolcanoVase.gif" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="CrystalBerry" Source="Images\Pape\MinorItems\PM_CrystalBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="WaterStone" Source="Images\Pape\MinorItems\PM_WaterSTone.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Lyrics" Source="Images\Pape\MinorItems\PM_Lyrics.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Melody" Source="Images\Pape\MinorItems\PM_Melody.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="RedBerry" Source="Images\Pape\MinorItems\PM_RedBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="YellowBerry" Source="Images\Pape\MinorItems\PM_YellowBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="BlueBerry" Source="Images\Pape\MinorItems\PM_BlueBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="BubbleBerry" Source="Images\Pape\MinorItems\PM_BubbleBerry.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="BlueKey" Source="Images\Pape\MinorItems\PM_BlueKey.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="CakeMix" Source="Images\Pape\MinorItems\PM_CakeMix.png" x:Shared="false" Tag="Minor"/>
+    <Image x:Key="Lemon" Source="Images\Pape\MinorItems\PM_Lemon.png" x:Shared="false" Tag="Minor"/>
+    <StackPanel x:Key="StoreroomKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
+        <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
+        <TextBlock Margin="20,-20,0,0" Text="S" FontSize="24" Foreground="White" FontFamily="{DynamicResource PaperMarioFont}"/>
+    </StackPanel>
+    <StackPanel x:Key="OddKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
+        <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
+        <TextBlock Margin="20,-20,0,0" Text="O" FontSize="24" Foreground="White" FontFamily="{DynamicResource PaperMarioFont}"/>
+    </StackPanel>
+    <StackPanel x:Key="PrisonKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
+        <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
+        <TextBlock Margin="20,-20,0,0" Text="P" FontSize="24" Foreground="White" FontFamily="{DynamicResource PaperMarioFont}"/>
+    </StackPanel>
+    
+    <!--Badges and Item Pouches: 3 pts-->
+    <Image x:Key="BumpAttack" Source="Images\Pape\Badges\Bump_Attack_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="DodgeMaster" Source="Images\Pape\Badges\Dodge_Master_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FeelingFine" Source="Images\Pape\Badges\Feeling_Fine_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FPPlus" Source="Images\Pape\Badges\FP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="HPPlus" Source="Images\Pape\Badges\HP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaJump" Source="Images\Pape\Badges\Mega_Jump_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaQuake" Source="Images\Pape\Badges\Mega_Quake_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaSmash" Source="Images\Pape\Badges\Mega_Smash_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="PowerPlus" Source="Images\Pape\Badges\Power_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="SpikeShield" Source="Images\Pape\Badges\Spike_Shield_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="ItemPouch" Source="Images\Pape\PM_ItemPouch.png" x:Shared="false" Tag="Badges"/>
+    
+
+    <!--Simple World Icons-->
+	<Image x:Key="GoombaRegionImage" Source="Images\Pape\Partners\Goombario.png"/>
+    <Image x:Key="ToadTownTunnelsImage" Source="Images\Pape\PM_Blooper_Baby.gif"/>
+    <Image x:Key="KoopaRegionImage" Source="Images\Pape\Partners\Kooper.png"/>
+    <Image x:Key="MtRuggedImage" Source="Images\Pape\Partners\Parakarry.png"/>
+    <Image x:Key="DryDryDesertImage" Source="Images\Pape\Letters\PM_Nomadimouse.png"/>
+    <Image x:Key="ForeverForestImage" Source="Images\Pape\PM_Oaklie.png"/>
+    <Image x:Key="GustyGulchImage" Source="Images\Pape\PM_Herbert.png"/>
+    <Image x:Key="ShyGuyToyboxImage" Source="Images\Pape\Partners\Watt.png"/>
+    <Image x:Key="MtLavalavaImage" Source="Images\Pape\MinorItems\PM_VolcanoVase.gif"/>
+    <Image x:Key="ShiverMountainImage" Source="Images\Pape\PM_Herringway.png"/>
+    <Image x:Key="BowserCastleImage" Source="Images\Pape\PM_Bowser.gif"/>
+
+    <Image x:Key="ToadTownImage" Source="Images\Pape\PM_Toad.png"/>
+    <Image x:Key="ShootingStarSummitImage" Source="Images\Pape\Letters\PM_Merlow.png"/>
+    <Image x:Key="KoopaFortressImage" Source="Images\Pape\Partners\Bombette.png"/>
+    <Image x:Key="DryDryOutpostImage" Source="Images\Pape\Letters\PM_Little_Mouser.png"/>
+    <Image x:Key="DryDryRuinsImage" Source="Images\Pape\PM_Tutankoopa.gif"/>
+    <Image x:Key="BooMansionImage" Source="Images\Pape\Partners\bow.png"/>
+    <Image x:Key="TubbaCastleImage" Source="Images\Pape\PM_Tubba's_Heart.gif"/>
+    <Image x:Key="JadeJungleImage" Source="Images\Pape\Partners\Sushie.png"/>
+    <Image x:Key="FlowerFieldsImage" Source="Images\Pape\Partners\Lakilester.png"/>
+    <Image x:Key="CrystalPalaceImage" Source="Images\Pape\PM_Crystal_King.gif"/>
+    <Image x:Key="StartingGearImage" Source="Images\Pape\PM_StarPoint.png"/>
+</ResourceDictionary>
