@@ -51,7 +51,7 @@ namespace PapeTracker
             data.WorldsData.Add("KoopaRegion", new WorldData(KoopaRegionTop, KoopaRegion, null, KoopaRegionHint, KoopaRegionGrid, KoopaRegionBar, false, "Koopa Region:"));
             data.WorldsData.Add("KoopaFortress", new WorldData(KoopaFortressTop, KoopaFortress, null, KoopaFortressHint, KoopaFortressGrid, KoopaFortressBar, false, "Koopa Bros Fortress:"));
             data.WorldsData.Add("MtRugged", new WorldData(MtRuggedTop, MtRugged, null, MtRuggedHint, MtRuggedGrid, MtRuggedBar, false, "Mt Rugged:"));
-            data.WorldsData.Add("DryDryOutpost", new WorldData(DryDryOutpostTop, DryDryOutpost, null, DryDryOutpostHint, DryDryOutpostGrid, DryDryOutpostBar, false, "Dry Dry Outpost"));
+            data.WorldsData.Add("DryDryOutpost", new WorldData(DryDryOutpostTop, DryDryOutpost, null, DryDryOutpostHint, DryDryOutpostGrid, DryDryOutpostBar, false, "Dry Dry Outpost:"));
             data.WorldsData.Add("DryDryDesert", new WorldData(DryDryDesertTop, DryDryDesert, null, DryDryDesertHint, DryDryDesertGrid, DryDryDesertBar, false, "Dry Dry Desert:"));
             data.WorldsData.Add("DryDryRuins", new WorldData(DryDryRuinsTop, DryDryRuins, null, DryDryRuinsHint, DryDryRuinsGrid, DryDryRuinsBar, false, "Dry Dry Ruins:"));
             data.WorldsData.Add("ForeverForest", new WorldData(ForeverForestTop, ForeverForest, null, ForeverForestHint, ForeverForestGrid, ForeverForestBar, false, "Forever Forest:"));

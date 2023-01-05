@@ -57,7 +57,7 @@
                 <!--<MenuItem Name="BroadcastStartupOption" Header="Broadcast Window On Startup" IsCheckable="True" IsChecked="False" Click="BroadcastStartupToggle"/>-->
             </MenuItem>
             <MenuItem Name="ModeDisplay" Foreground="DimGray" Header="Spoiler Log Import Mode" Focusable="False" IsHitTestVisible="False"/>
-            <MenuItem Header="v0.1.2" IsHitTestVisible="False" Focusable="False" HorizontalAlignment="Right"/>
+            <MenuItem Header="v0.1.3" IsHitTestVisible="False" Focusable="False" HorizontalAlignment="Right"/>
         </Menu>
 
         <Grid>
@@ -391,8 +391,52 @@
                         <local:WorldGrid x:Name="DryDryRuinsGrid" Grid.Column="1"/>
                     </Grid>
 
-                    <!-- Forever Forest -->
-                    <Grid Name="ForeverForestTop" Grid.Row="10">
+                    <Grid x:Name="StartingGearTop" Grid.Row="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1.5*"/>
+                            <ColumnDefinition Width="3.3*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid Grid.Column="0">
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="3.5*"/>
+                                <ColumnDefinition Width="1*"/>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width=".1*"/>
+                                <ColumnDefinition Width=".3*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Button x:Name="StartingGear" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
+                                <DynamicResource ResourceKey="StartingGearImage"/>
+                            </Button>
+                            <!--<TextBlock x:Name="StartingGearHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="0" Visibility="Hidden"/>-->
+                            <Image x:Name="StartingGearBar" Source="/Images/VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
+                        </Grid>
+                        <local:WorldGrid x:Name="StartingGearGrid" Grid.Column="1"/>
+                    </Grid>
+
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <Grid Name="ForeverForestTop" Grid.Row="0">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -422,25 +466,8 @@
                         <local:WorldGrid x:Name="ForeverForestGrid" Grid.Column="1"/>
                     </Grid>
 
-                </Grid>
-
-                <Grid Grid.Column="1">
-                    <Grid.RowDefinitions>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                        <RowDefinition/>
-                    </Grid.RowDefinitions>
-
                     <!-- Boo's Mansion -->
-                    <Grid Name="BooMansionTop" Grid.Row="0">
+                    <Grid Name="BooMansionTop" Grid.Row="1">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -470,7 +497,7 @@
                         <local:WorldGrid x:Name="BooMansionGrid" Grid.Column="1"/>
                     </Grid>
 
-                    <Grid Name="GustyGulchTop" Grid.Row="1">
+                    <Grid Name="GustyGulchTop" Grid.Row="2">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -501,7 +528,7 @@
                     </Grid>
 
                     <!-- Halloween Town -->
-                    <Grid Name="TubbaCastleTop" Grid.Row="2">
+                    <Grid Name="TubbaCastleTop" Grid.Row="3">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -531,7 +558,7 @@
                         <local:WorldGrid x:Name="TubbaCastleGrid" Grid.Column="1"/>
                     </Grid>
 
-                    <Grid Name="ShyGuyToyboxTop" Grid.Row="3">
+                    <Grid Name="ShyGuyToyboxTop" Grid.Row="4">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -562,7 +589,7 @@
                     </Grid>
 
                     <!-- Jade Jungle -->
-                    <Grid Name="JadeJungleTop" Grid.Row="4">
+                    <Grid Name="JadeJungleTop" Grid.Row="5">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -592,7 +619,7 @@
                         <local:WorldGrid x:Name="JadeJungleGrid" Grid.Column="1"/>
                     </Grid>
 
-                    <Grid Name="MtLavalavaTop" Grid.Row="5">
+                    <Grid Name="MtLavalavaTop" Grid.Row="6">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -623,7 +650,7 @@
                     </Grid>
 
                     <!-- FlowerFields -->
-                    <Grid Name="FlowerFieldsTop" Grid.Row="6">
+                    <Grid Name="FlowerFieldsTop" Grid.Row="7">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -651,7 +678,7 @@
                         <local:WorldGrid x:Name="FlowerFieldsGrid" Grid.Column="1"/>
                     </Grid>
 
-                    <Grid Name="ShiverMountainTop" Grid.Row="7">
+                    <Grid Name="ShiverMountainTop" Grid.Row="8">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -681,7 +708,7 @@
                         <local:WorldGrid x:Name="ShiverMountainGrid" Grid.Column="1"/>
                     </Grid>
 
-                    <Grid x:Name="CrystalPalaceTop" Grid.Row="8">
+                    <Grid x:Name="CrystalPalaceTop" Grid.Row="9">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -709,7 +736,7 @@
                         <local:WorldGrid x:Name="CrystalPalaceGrid" Grid.Column="1"/>
                     </Grid>
 
-                    <Grid Name="BowserCastleTop" Grid.Row="9">
+                    <Grid Name="BowserCastleTop" Grid.Row="10">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="1.5*"/>
                             <ColumnDefinition Width="3.3*"/>
@@ -739,33 +766,7 @@
                         <local:WorldGrid x:Name="BowserCastleGrid" Grid.Column="1"/>
                     </Grid>
 
-                    <Grid x:Name="StartingGearTop" Grid.Row="10">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="1.5*"/>
-                            <ColumnDefinition Width="3.3*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <Grid Grid.Column="0">
-                            <Grid.RowDefinitions>
-                                <RowDefinition/>
-                                <RowDefinition/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="3.5*"/>
-                                <ColumnDefinition Width="1*"/>
-                                <ColumnDefinition Width="2*"/>
-                                <ColumnDefinition Width=".1*"/>
-                                <ColumnDefinition Width=".3*"/>
-                            </Grid.ColumnDefinitions>
-
-                            <Button x:Name="StartingGear" Background="Transparent" PreviewMouseDown="OnMouseDown" MouseWheel="OnMouseWheel" Template="{StaticResource DefaultButton}" Grid.RowSpan="2" Grid.ColumnSpan="2" FocusVisualStyle="{x:Null}">
-                                <DynamicResource ResourceKey="StartingGearImage"/>
-                            </Button>
-                            <!--<TextBlock x:Name="StartingGearHint" FontSize="32" Foreground="White" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Right" FontFamily="{DynamicResource PaperMarioFont}" Grid.RowSpan="2" VerticalAlignment="Center" Text="0" Visibility="Hidden"/>-->
-                            <Image x:Name="StartingGearBar" Source="/Images/VerticalBarWhite.png" Grid.RowSpan="2" Grid.Column="4"/>
-                        </Grid>
-                        <local:WorldGrid x:Name="StartingGearGrid" Grid.Column="1"/>
-                    </Grid>
+                    
                 </Grid>
             </Grid>
 
@@ -1014,7 +1015,15 @@
                 <local:Item x:Name="Watt" Content="{DynamicResource Watt}" Grid.Row="0" Grid.Column="5" Panel.ZIndex="0" Tag="PartnersAndGearGrid"/>
                 <local:Item x:Name="Sushie" Content="{DynamicResource Sushie}" Grid.Row="0" Grid.Column="6" Panel.ZIndex="0" Tag="PartnersAndGearGrid"/>
                 <local:Item x:Name="Lakilester" Content="{DynamicResource Spike}" Grid.Row="0" Grid.Column="7" Panel.ZIndex="0" Tag="PartnersAndGearGrid"/>
-                
+                <Button Content="{DynamicResource Goombario}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="Goombario"/>
+                <Button Content="{DynamicResource Kooper}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="Kooper"/>
+                <Button Content="{DynamicResource Bombette}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="Bombette"/>
+                <Button Content="{DynamicResource Parakarry}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="Parakarry"/>
+                <Button Content="{DynamicResource Bow}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="Bow"/>
+                <Button Content="{DynamicResource Watt}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="Watt"/>
+                <Button Content="{DynamicResource Sushie}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="6" Opacity="0.25" Panel.ZIndex="-1" Tag="Sushie"/>
+                <Button Content="{DynamicResource Spike}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="7" Opacity="0.25" Panel.ZIndex="-1" Tag="Lakilester"/>
+
 
                 <!-- Row 2 -->
                 <local:Item x:Name="ProgressiveBootsA" Content="{DynamicResource Boots}" Grid.Row="1" Grid.Column="0" Tag="PartnersAndGearGrid"/>
@@ -1023,6 +1032,12 @@
                 <local:Item x:Name="ProgressiveHammerA" Content="{DynamicResource Hammer}" Grid.Row="1" Grid.Column="3" Tag="PartnersAndGearGrid"/>
                 <local:Item x:Name="ProgressiveHammerB" Content="{DynamicResource SuperHammer}" Grid.Row="1" Grid.Column="4" Tag="PartnersAndGearGrid"/>
                 <local:Item x:Name="ProgressiveHammerC" Content="{DynamicResource UltraHammer}" Grid.Row="1" Grid.Column="5" Tag="PartnersAndGearGrid"/>
+                <Button Content="{DynamicResource Boots}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="ProgressiveBootsA"/>
+                <Button Content="{DynamicResource SuperBoots}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="ProgressiveBootsB"/>
+                <Button Content="{DynamicResource UltraBoots}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="ProgressiveBootsC"/>
+                <Button Content="{DynamicResource Hammer}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="ProgressiveHammerA"/>
+                <Button Content="{DynamicResource SuperHammer}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="ProgressiveHammerB"/>
+                <Button Content="{DynamicResource UltraHammer}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="ProgressiveHammerC"/>
             </Grid>
 
             <Grid Name="MajorItemsGrid" Grid.Row="4" Visibility="Collapsed">
@@ -1061,6 +1076,18 @@
                 <local:Item x:Name="RuinsKeyB" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="10" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="RuinsKeyC" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="11" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="RuinsKeyD" Content="{DynamicResource RuinsKey}" Grid.Row="0" Grid.Column="12" Panel.ZIndex="0" Tag="MajorItemsGrid"/>
+                <Button Content="{DynamicResource FortressKey}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="KoopaFortressKeyA"/>
+                <Button Content="{DynamicResource FortressKey}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="KoopaFortressKeyB"/>
+                <Button Content="{DynamicResource FortressKey}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="KoopaFortressKeyC"/>
+                <Button Content="{DynamicResource FortressKey}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="KoopaFortressKeyD"/>
+                <Button Content="{DynamicResource PulseStone}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="PulseStone"/>
+                <Button Content="{DynamicResource PyramidStone}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="6" Opacity="0.25" Panel.ZIndex="-1" Tag="PyramidStone"/>
+                <Button Content="{DynamicResource DiamondStone}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="7" Opacity="0.25" Panel.ZIndex="-1" Tag="DiamondStone"/>
+                <Button Content="{DynamicResource LunarStone}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="8" Opacity="0.25" Panel.ZIndex="-1" Tag="LunarStone"/>
+                <Button Content="{DynamicResource RuinsKey}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="9" Opacity="0.25" Panel.ZIndex="-1" Tag="RuinsKeyA"/>
+                <Button Content="{DynamicResource RuinsKey}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="10" Opacity="0.25" Panel.ZIndex="-1" Tag="RuinsKeyB"/>
+                <Button Content="{DynamicResource RuinsKey}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="11" Opacity="0.25" Panel.ZIndex="-1" Tag="RuinsKeyC"/>
+                <Button Content="{DynamicResource RuinsKey}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="12" Opacity="0.25" Panel.ZIndex="-1" Tag="RuinsKeyD"/>
                 
 
                 <!-- Row 2 -->
@@ -1071,8 +1098,15 @@
                 <local:Item x:Name="ToyTrain" Content="{DynamicResource ToyTrain}" Grid.Row="1" Grid.Column="6" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="Cake" Content="{DynamicResource Cake}" Grid.Row="1" Grid.Column="7" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="JadeRaven" Content="{DynamicResource JadeRaven}" Grid.Row="1" Grid.Column="9" Tag="MajorItemsGrid"/>
+                <Button Content="{DynamicResource BooPortrait}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="BooPortrait"/>
+                <Button Content="{DynamicResource TubbaKey}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="TubbaCastleKeyA"/>
+                <Button Content="{DynamicResource TubbaKey}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="TubbaCastleKeyB"/>
+                <Button Content="{DynamicResource TubbaKey}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="TubbaCastleKeyC"/>
+                <Button Content="{DynamicResource ToyTrain}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="6" Opacity="0.25" Panel.ZIndex="-1" Tag="ToyTrain"/>
+                <Button Content="{DynamicResource Cake}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="7" Opacity="0.25" Panel.ZIndex="-1" Tag="Cake"/>
+                <Button Content="{DynamicResource JadeRaven}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="9" Opacity="0.25" Panel.ZIndex="-1" Tag="JadeRaven"/>
                 
-                
+                <!-- Row 3 -->
                 <local:Item x:Name="MagicalSeed1" Content="{DynamicResource MagicalSeed1}" Grid.Row="2" Grid.Column="0" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="MagicalSeed2" Content="{DynamicResource MagicalSeed2}" Grid.Row="2" Grid.Column="1" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="MagicalSeed3" Content="{DynamicResource MagicalSeed3}" Grid.Row="2" Grid.Column="2" Tag="MajorItemsGrid"/>
@@ -1081,9 +1115,16 @@
                 <local:Item x:Name="FertileSoil" Content="{DynamicResource FertileSoil}" Grid.Row="2" Grid.Column="5" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="MiracleWater" Content="{DynamicResource MiracleWater}" Grid.Row="2" Grid.Column="6" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="UltraStone" Content="{DynamicResource UltraStone}" Grid.Row="2" Grid.Column="12" Tag="MajorItemsGrid"/>
+                <Button Content="{DynamicResource MagicalSeed1}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="MagicalSeed1"/>
+                <Button Content="{DynamicResource MagicalSeed2}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="MagicalSeed2"/>
+                <Button Content="{DynamicResource MagicalSeed3}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="MagicalSeed3"/>
+                <Button Content="{DynamicResource MagicalSeed4}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="MagicalSeed4"/>
+                <Button Content="{DynamicResource MagicalBean}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="MagicalBean"/>
+                <Button Content="{DynamicResource FertileSoil}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="FertileSoil"/>
+                <Button Content="{DynamicResource MiracleWater}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="6" Opacity="0.25" Panel.ZIndex="-1" Tag="MiracleWater"/>
+                <Button Content="{DynamicResource UltraStone}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="12" Opacity="0.25" Panel.ZIndex="-1" Tag="UltraStone"/>
 
-                <!-- Row 3 -->
-                
+                <!-- Row 4 -->
                 <local:Item x:Name="WarehouseKey" Content="{DynamicResource WarehouseKey}" Grid.Row="3" Grid.Column="0" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="SnowmanBucket" Content="{DynamicResource Bucket}" Grid.Row="3" Grid.Column="1" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="SnowmanScarf" Content="{DynamicResource Scarf}" Grid.Row="3" Grid.Column="2" Tag="MajorItemsGrid"/>
@@ -1095,6 +1136,17 @@
                 <local:Item x:Name="BowserCastleKeyC" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="10" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="BowserCastleKeyD" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="11" Tag="MajorItemsGrid"/>
                 <local:Item x:Name="BowserCastleKeyE" Content="{DynamicResource BowserCastleKey}" Grid.Row="3" Grid.Column="12" Tag="MajorItemsGrid"/>
+                <Button Content="{DynamicResource WarehouseKey}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="WarehouseKey"/>
+                <Button Content="{DynamicResource Bucket}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="SnowmanBucket"/>
+                <Button Content="{DynamicResource Scarf}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="SnowmanScarf"/>
+                <Button Content="{DynamicResource StarStone}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="StarStone"/>
+                <Button Content="{DynamicResource RedKey}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="RedKey"/>
+                <Button Content="{DynamicResource PalaceKey}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="CrystalPalaceKey"/>
+                <Button Content="{DynamicResource BowserCastleKey}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="8" Opacity="0.25" Panel.ZIndex="-1" Tag="BowserCastleKeyA"/>
+                <Button Content="{DynamicResource BowserCastleKey}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="9" Opacity="0.25" Panel.ZIndex="-1" Tag="BowserCastleKeyB"/>
+                <Button Content="{DynamicResource BowserCastleKey}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="10" Opacity="0.25" Panel.ZIndex="-1" Tag="BowserCastleKeyC"/>
+                <Button Content="{DynamicResource BowserCastleKey}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="11" Opacity="0.25" Panel.ZIndex="-1" Tag="BowserCastleKeyD"/>
+                <Button Content="{DynamicResource BowserCastleKey}" Template="{StaticResource DefaultButton}" Grid.Row="3" Grid.Column="12" Opacity="0.25" Panel.ZIndex="-1" Tag="BowserCastleKeyE"/>
             </Grid>
 
             <Grid Name="MinorItemsGrid" Grid.Row="4" Visibility="Collapsed">
@@ -1134,6 +1186,19 @@
                 <local:Item x:Name="Mailbag" Content="{DynamicResource Mailbag}" Grid.Row="0" Grid.Column="10" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="Cookbook" Content="{DynamicResource Cookbook}" Grid.Row="0" Grid.Column="11" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="Dictionary" Content="{DynamicResource Dictionary}" Grid.Row="0" Grid.Column="12" Tag="MinorItemsGrid"/>
+                <Button Content="{DynamicResource Dolly}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="Dolly"/>
+                <Button Content="{DynamicResource KooperShell}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="KooperShell"/>
+                <Button Content="{DynamicResource Letter}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="Letter1"/>
+                <Button Content="{DynamicResource Letter}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="Letter2"/>
+                <Button Content="{DynamicResource Letter}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="Letter3"/>
+                <Button Content="{DynamicResource Artifact}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="Artifact"/>
+                <Button Content="{DynamicResource Record}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="6" Opacity="0.25" Panel.ZIndex="-1" Tag="BooRecord"/>
+                <Button Content="{DynamicResource Weight}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="7" Opacity="0.25" Panel.ZIndex="-1" Tag="BooWeight"/>
+                <Button Content="{DynamicResource Calculator}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="8" Opacity="0.25" Panel.ZIndex="-1" Tag="Calculator"/>
+                <Button Content="{DynamicResource FryingPan}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="9" Opacity="0.25" Panel.ZIndex="-1" Tag="FryingPan"/>
+                <Button Content="{DynamicResource Mailbag}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="10" Opacity="0.25" Panel.ZIndex="-1" Tag="Mailbag"/>
+                <Button Content="{DynamicResource Cookbook}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="11" Opacity="0.25" Panel.ZIndex="-1" Tag="Cookbook"/>
+                <Button Content="{DynamicResource Dictionary}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="12" Opacity="0.25" Panel.ZIndex="-1" Tag="Dictionary"/>
 
                 <!-- Row 2 -->
                 <local:Item x:Name="VolcanoVase" Content="{DynamicResource VolcanoVase}" Grid.Row="1" Grid.Column="0" Tag="MinorItemsGrid"/>
@@ -1141,20 +1206,45 @@
                 <local:Item x:Name="WaterStone" Content="{DynamicResource WaterStone}" Grid.Row="1" Grid.Column="2" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="Lyrics" Content="{DynamicResource Lyrics}" Grid.Row="1" Grid.Column="3" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="Melody" Content="{DynamicResource Melody}" Grid.Row="1" Grid.Column="4" Tag="MinorItemsGrid"/>
-                <local:Item x:Name="RedBerry" Content="{DynamicResource RedBerry}" Grid.Row="1" Grid.Column="5" Tag="MinorItemsGrid"/>
-                <local:Item x:Name="YellowBerry" Content="{DynamicResource YellowBerry}" Grid.Row="1" Grid.Column="6" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="RedBerryA" Content="{DynamicResource RedBerry}" Grid.Row="1" Grid.Column="5" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="RedBerryB" Content="{DynamicResource RedBerry}" Grid.Row="1" Grid.Column="5" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="RedBerryC" Content="{DynamicResource RedBerry}" Grid.Row="1" Grid.Column="5" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="YellowBerryA" Content="{DynamicResource YellowBerry}" Grid.Row="1" Grid.Column="6" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="YellowBerryB" Content="{DynamicResource YellowBerry}" Grid.Row="1" Grid.Column="6" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="YellowBerryC" Content="{DynamicResource YellowBerry}" Grid.Row="1" Grid.Column="6" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="BlueBerryA" Content="{DynamicResource BlueBerry}" Grid.Row="1" Grid.Column="7" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="BlueBerryB" Content="{DynamicResource BlueBerry}" Grid.Row="1" Grid.Column="8" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BlueBerryC" Content="{DynamicResource BlueBerry}" Grid.Row="1" Grid.Column="8" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BlueBerryD" Content="{DynamicResource BlueBerry}" Grid.Row="1" Grid.Column="8" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BlueBerryE" Content="{DynamicResource BlueBerry}" Grid.Row="1" Grid.Column="8" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="BlueBerryF" Content="{DynamicResource BlueBerry}" Grid.Row="1" Grid.Column="8" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="BubbleBerry" Content="{DynamicResource BubbleBerry}" Grid.Row="1" Grid.Column="9" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="StoreroomKey" Content="{DynamicResource StoreroomKey}" Grid.Row="1" Grid.Column="10" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="OddKey" Content="{DynamicResource OddKey}" Grid.Row="1" Grid.Column="11" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="BlueKey" Content="{DynamicResource BlueKey}" Grid.Row="1" Grid.Column="12" Tag="MinorItemsGrid"/>
+                <Button Content="{DynamicResource VolcanoVase}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="VolcanoVase"/>
+                <Button Content="{DynamicResource CrystalBerry}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="CrystalBerry"/>
+                <Button Content="{DynamicResource WaterStone}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="WaterStone"/>
+                <Button Content="{DynamicResource Lyrics}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="Lyrics"/>
+                <Button Content="{DynamicResource Melody}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="Melody"/>
+                <Button Content="{DynamicResource RedBerry}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="RedBerry"/>
+                <Button Content="{DynamicResource YellowBerry}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="6" Opacity="0.25" Panel.ZIndex="-1" Tag="YellowBerry"/>
+                <Button Content="{DynamicResource BlueBerry}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="7" Opacity="0.25" Panel.ZIndex="-1" Tag="BlueBerryA"/>
+                <Button Content="{DynamicResource BlueBerry}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="8" Opacity="0.25" Panel.ZIndex="-1" Tag="BlueBerryB"/>
+                <Button Content="{DynamicResource BubbleBerry}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="9" Opacity="0.25" Panel.ZIndex="-1" Tag="BubbleBerry"/>
+                <Button Content="{DynamicResource StoreroomKey}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="10" Opacity="0.25" Panel.ZIndex="-1" Tag="StoreroomKey"/>
+                <Button Content="{DynamicResource OddKey}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="11" Opacity="0.25" Panel.ZIndex="-1" Tag="OddKey"/>
+                <Button Content="{DynamicResource BlueKey}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="12" Opacity="0.25" Panel.ZIndex="-1" Tag="BlueKey"/>
 
                 <!-- Row 3 -->
                 <local:Item x:Name="PrisonKeyA" Content="{DynamicResource PrisonKey}" Grid.Row="2" Grid.Column="0" Tag="MinorItemsGrid"/>
                 <local:Item x:Name="PrisonKeyB" Content="{DynamicResource PrisonKey}" Grid.Row="2" Grid.Column="1" Tag="MinorItemsGrid"/>
-                <local:Item x:Name="CakeMix" Content="{DynamicResource CakeMix}" Grid.Row="2" Grid.Column="2" Tag="MinorItemsGrid"/>
-                <local:Item x:Name="Lemon" Content="{DynamicResource Lemon}" Grid.Row="2" Grid.Column="3" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="CakeMixA" Content="{DynamicResource CakeMix}" Grid.Row="2" Grid.Column="2" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="CakeMixB" Content="{DynamicResource CakeMix}" Grid.Row="2" Grid.Column="2" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="CakeMixC" Content="{DynamicResource CakeMix}" Grid.Row="2" Grid.Column="2" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="LemonA" Content="{DynamicResource Lemon}" Grid.Row="2" Grid.Column="3" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="LemonB" Content="{DynamicResource Lemon}" Grid.Row="2" Grid.Column="3" Tag="MinorItemsGrid"/>
+                <local:Item x:Name="LemonC" Content="{DynamicResource Lemon}" Grid.Row="2" Grid.Column="3" Tag="MinorItemsGrid"/>
                 <!--<local:Item x:Name="StarStone" Content="{DynamicResource StarStone}" Grid.Row="2" Grid.Column="4"/>
                 <local:Item x:Name="RedKey" Content="{DynamicResource RedKey}" Grid.Row="2" Grid.Column="5"/>
                 <local:Item x:Name="PalaceKey" Content="{DynamicResource PalaceKey}" Grid.Row="2" Grid.Column="6"/>
@@ -1164,8 +1254,14 @@
                 <local:Item x:Name="Final" Content="{DynamicResource Final}" Grid.Row="2" Grid.Column="10"/>
                 <local:Item x:Name="OnceMore" Content="{DynamicResource OnceMore}" Grid.Row="2" Grid.Column="11"/>
                 <local:Item x:Name="SecondChance" Content="{DynamicResource SecondChance}" Grid.Row="2" Grid.Column="12"/>-->
+                <Button Content="{DynamicResource PrisonKey}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="PrisonKeyA"/>
+                <Button Content="{DynamicResource PrisonKey}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="PrisonKeyB"/>
+                <Button Content="{DynamicResource CakeMix}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="CakeMix"/>
+                <Button Content="{DynamicResource Lemon}" Template="{StaticResource DefaultButton}" Grid.Row="2" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="Lemon"/>
 
-                <!-- Row 4 --><!--
+                <!-- Row 4 -->
+                
+                <!--
                 <local:Item x:Name="TornPage1" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="0"/>
                 <local:Item x:Name="TornPage2" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="1"/>
                 <local:Item x:Name="TornPage3" Content="{DynamicResource TornPage}" Grid.Row="3" Grid.Column="2"/>
@@ -1218,6 +1314,19 @@
                 <local:Item x:Name="MegaQuake" Content="{DynamicResource MegaQuake}" Grid.Row="0" Grid.Column="10" Tag="BadgesGrid"/>
                 <local:Item x:Name="MegaSmash" Content="{DynamicResource MegaSmash}" Grid.Row="0" Grid.Column="11" Tag="BadgesGrid"/>
                 <local:Item x:Name="PowerPlusA" Content="{DynamicResource PowerPlus}" Grid.Row="0" Grid.Column="12" Tag="BadgesGrid"/>
+                <Button Content="{DynamicResource BumpAttack}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="BumpAttack"/>
+                <Button Content="{DynamicResource DodgeMaster}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="DodgeMaster"/>
+                <Button Content="{DynamicResource FeelingFine}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="FeelingFine"/>
+                <Button Content="{DynamicResource FPPlus}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="FPPlusA"/>
+                <Button Content="{DynamicResource FPPlus}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="FPPlusB"/>
+                <Button Content="{DynamicResource FPPlus}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="FPPlusC"/>
+                <Button Content="{DynamicResource HPPlus}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="6" Opacity="0.25" Panel.ZIndex="-1" Tag="HPPlusA"/>
+                <Button Content="{DynamicResource HPPlus}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="7" Opacity="0.25" Panel.ZIndex="-1" Tag="HPPlusB"/>
+                <Button Content="{DynamicResource HPPlus}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="8" Opacity="0.25" Panel.ZIndex="-1" Tag="HPPlusC"/>
+                <Button Content="{DynamicResource MegaJump}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="9" Opacity="0.25" Panel.ZIndex="-1" Tag="MegaJump"/>
+                <Button Content="{DynamicResource MegaQuake}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="10" Opacity="0.25" Panel.ZIndex="-1" Tag="MegaQuake"/>
+                <Button Content="{DynamicResource MegaSmash}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="11" Opacity="0.25" Panel.ZIndex="-1" Tag="MegaSmash"/>
+                <Button Content="{DynamicResource PowerPlus}" Template="{StaticResource DefaultButton}" Grid.Row="0" Grid.Column="12" Opacity="0.25" Panel.ZIndex="-1" Tag="PowerPlusA"/>
 
 
                 
@@ -1230,6 +1339,13 @@
                 <local:Item x:Name="ItemPouchC" Content="{DynamicResource ItemPouch}" Grid.Row="1" Grid.Column="4" Tag="BadgesGrid"/>
                 <local:Item x:Name="ItemPouchD" Content="{DynamicResource ItemPouch}" Grid.Row="1" Grid.Column="5" Tag="BadgesGrid"/>
                 <local:Item x:Name="ItemPouchE" Content="{DynamicResource ItemPouch}" Grid.Row="1" Grid.Column="6" Tag="BadgesGrid"/>
+                <Button Content="{DynamicResource PowerPlus}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="0" Opacity="0.25" Panel.ZIndex="-1" Tag="PowerPlusB"/>
+                <Button Content="{DynamicResource SpikeShield}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="1" Opacity="0.25" Panel.ZIndex="-1" Tag="SpikeShield"/>
+                <Button Content="{DynamicResource ItemPouch}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="2" Opacity="0.25" Panel.ZIndex="-1" Tag="ItemPouchA"/>
+                <Button Content="{DynamicResource ItemPouch}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="3" Opacity="0.25" Panel.ZIndex="-1" Tag="ItemPouchB"/>
+                <Button Content="{DynamicResource ItemPouch}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="4" Opacity="0.25" Panel.ZIndex="-1" Tag="ItemPouchC"/>
+                <Button Content="{DynamicResource ItemPouch}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="5" Opacity="0.25" Panel.ZIndex="-1" Tag="ItemPouchD"/>
+                <Button Content="{DynamicResource ItemPouch}" Template="{StaticResource DefaultButton}" Grid.Row="1" Grid.Column="6" Opacity="0.25" Panel.ZIndex="-1" Tag="ItemPouchE"/>
 
 
                 <!-- Row 3 -->

@@ -45,7 +45,7 @@
     <Image x:Key="MiracleWater" Source="Images\Pape\KeyItems\PM_MiracleWater.png" x:Shared="false" Tag="Major"/>
     <StackPanel x:Key="WarehouseKey" VerticalAlignment="Center" x:Shared="false" Tag="Major">
         <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
-        <TextBlock Margin="20,-20,0,0" Text="W" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
+        <TextBlock Margin="20,-20,0,0" Text="W" FontSize="24" Foreground="White" FontFamily="{DynamicResource PaperMarioFont}"/>
     </StackPanel>
     <Image x:Key="Bucket" Source="Images\Pape\KeyItems\PM_Bucket.png" x:Shared="false" Tag="Major"/>
     <Image x:Key="Scarf" Source="Images\Pape\KeyItems\PM_Scarf.gif" x:Shared="false" Tag="Major"/>
@@ -80,15 +80,15 @@
     <Image x:Key="Lemon" Source="Images\Pape\MinorItems\PM_Lemon.png" x:Shared="false" Tag="Minor"/>
     <StackPanel x:Key="StoreroomKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
         <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
-        <TextBlock Margin="20,-20,0,0" Text="S" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
+        <TextBlock Margin="20,-20,0,0" Text="S" FontSize="24" Foreground="White" FontFamily="{DynamicResource PaperMarioFont}"/>
     </StackPanel>
     <StackPanel x:Key="OddKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
         <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
-        <TextBlock Margin="20,-20,0,0" Text="O" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
+        <TextBlock Margin="20,-20,0,0" Text="O" FontSize="24" Foreground="White" FontFamily="{DynamicResource PaperMarioFont}"/>
     </StackPanel>
     <StackPanel x:Key="PrisonKey" VerticalAlignment="Center" x:Shared="false" Tag="Minor">
         <Image Source="Images\Pape\KeyItems\PM_Key.gif" />
-        <TextBlock Margin="20,-20,0,0" Text="P" FontSize="24" Foreground="White" FontFamily="PaperMarioFont"/>
+        <TextBlock Margin="20,-20,0,0" Text="P" FontSize="24" Foreground="White" FontFamily="{DynamicResource PaperMarioFont}"/>
     </StackPanel>
     
     <!--Badges and Item Pouches: 3 pts-->
