@@ -44,28 +44,28 @@ namespace PapeTracker
         {
             data = new Data();
 
-            data.WorldsData.Add("GoombaRegion", new WorldData(GoombaRegionTop, GoombaRegion, null, GoombaRegionHint, GoombaRegionGrid, GoombaRegionBar, false, "Goomba Region:"));
-            data.WorldsData.Add("ToadTown", new WorldData(ToadTownTop, ToadTown, null, ToadTownHint, ToadTownGrid, ToadTownBar, false, "Toad Town:"));
-            data.WorldsData.Add("ToadTownTunnels", new WorldData(ToadTownTunnelsTop, ToadTownTunnels, null, ToadTownTunnelsHint, ToadTownTunnelsGrid, ToadTownTunnelsBar, false, "Toad Town Tunnels:"));
-            data.WorldsData.Add("ShootingStarSummit", new WorldData(ShootingStarSummitTop, ShootingStarSummit, null, ShootingStarSummitHint, ShootingStarSummitGrid, ShootingStarSummitBar, false, "Shooting Star Summit:"));
-            data.WorldsData.Add("KoopaRegion", new WorldData(KoopaRegionTop, KoopaRegion, null, KoopaRegionHint, KoopaRegionGrid, KoopaRegionBar, false, "Koopa Region:"));
-            data.WorldsData.Add("KoopaFortress", new WorldData(KoopaFortressTop, KoopaFortress, null, KoopaFortressHint, KoopaFortressGrid, KoopaFortressBar, false, "Koopa Bros Fortress:"));
-            data.WorldsData.Add("MtRugged", new WorldData(MtRuggedTop, MtRugged, null, MtRuggedHint, MtRuggedGrid, MtRuggedBar, false, "Mt Rugged:"));
-            data.WorldsData.Add("DryDryOutpost", new WorldData(DryDryOutpostTop, DryDryOutpost, null, DryDryOutpostHint, DryDryOutpostGrid, DryDryOutpostBar, false, "Dry Dry Outpost:"));
-            data.WorldsData.Add("DryDryDesert", new WorldData(DryDryDesertTop, DryDryDesert, null, DryDryDesertHint, DryDryDesertGrid, DryDryDesertBar, false, "Dry Dry Desert:"));
-            data.WorldsData.Add("DryDryRuins", new WorldData(DryDryRuinsTop, DryDryRuins, null, DryDryRuinsHint, DryDryRuinsGrid, DryDryRuinsBar, false, "Dry Dry Ruins:"));
-            data.WorldsData.Add("ForeverForest", new WorldData(ForeverForestTop, ForeverForest, null, ForeverForestHint, ForeverForestGrid, ForeverForestBar, false, "Forever Forest:"));
-            data.WorldsData.Add("BooMansion", new WorldData(BooMansionTop, BooMansion, null, BooMansionHint, BooMansionGrid, BooMansionBar, false, "Boo's Mansion:"));
-            data.WorldsData.Add("GustyGulch", new WorldData(GustyGulchTop, GustyGulch, null, GustyGulchHint, GustyGulchGrid, GustyGulchBar, false, "Gusty Gulch:"));
-            data.WorldsData.Add("TubbaCastle", new WorldData(TubbaCastleTop, TubbaCastle, null, TubbaCastleHint, TubbaCastleGrid, TubbaCastleBar, false, "Tubba's Castle:"));
-            data.WorldsData.Add("ShyGuyToybox", new WorldData(ShyGuyToyboxTop, ShyGuyToybox, null, ShyGuyToyboxHint, ShyGuyToyboxGrid, ShyGuyToyboxBar, false, "Shy Guy's Toybox:"));
-            data.WorldsData.Add("JadeJungle", new WorldData(JadeJungleTop, JadeJungle, null, JadeJungleHint, JadeJungleGrid, JadeJungleBar, false, "Jade Jungle:"));
-            data.WorldsData.Add("MtLavalava", new WorldData(MtLavalavaTop, MtLavalava, null, MtLavalavaHint, MtLavalavaGrid, MtLavalavaBar, false, "Mt Lavalava:"));
-            data.WorldsData.Add("FlowerFields", new WorldData(FlowerFieldsTop, FlowerFields, null, FlowerFieldsHint, FlowerFieldsGrid, FlowerFieldsBar, true, "Flower Fields:"));
-            data.WorldsData.Add("ShiverMountain", new WorldData(ShiverMountainTop, ShiverMountain, null, ShiverMountainHint, ShiverMountainGrid, ShiverMountainBar, false, "Shiver Mountain:"));
-            data.WorldsData.Add("CrystalPalace", new WorldData(CrystalPalaceTop, CrystalPalace, null, CrystalPalaceHint, CrystalPalaceGrid, CrystalPalaceBar, false, "Crystal Palace:"));
-            data.WorldsData.Add("BowserCastle", new WorldData(BowserCastleTop, BowserCastle, null, BowserCastleHint, BowserCastleGrid, BowserCastleBar, false, "Bowser's Castle:"));
-            data.WorldsData.Add("StartingGear", new WorldData(StartingGearTop, StartingGear, null, null, StartingGearGrid, StartingGearBar, false, "Starting Items:"));
+            data.WorldsData.Add("GoombaRegion", new WorldData(GoombaRegionTop, GoombaRegion, null, GoombaRegionHint, GoombaRegionGrid, GoombaRegionBar, false, "Goomba Region"));
+            data.WorldsData.Add("ToadTown", new WorldData(ToadTownTop, ToadTown, null, ToadTownHint, ToadTownGrid, ToadTownBar, false, "Toad Town"));
+            data.WorldsData.Add("ToadTownTunnels", new WorldData(ToadTownTunnelsTop, ToadTownTunnels, null, ToadTownTunnelsHint, ToadTownTunnelsGrid, ToadTownTunnelsBar, false, "Toad Town Tunnels"));
+            data.WorldsData.Add("ShootingStarSummit", new WorldData(ShootingStarSummitTop, ShootingStarSummit, null, ShootingStarSummitHint, ShootingStarSummitGrid, ShootingStarSummitBar, false, "Shooting Star Summit"));
+            data.WorldsData.Add("KoopaRegion", new WorldData(KoopaRegionTop, KoopaRegion, null, KoopaRegionHint, KoopaRegionGrid, KoopaRegionBar, false, "Koopa Region"));
+            data.WorldsData.Add("KoopaFortress", new WorldData(KoopaFortressTop, KoopaFortress, null, KoopaFortressHint, KoopaFortressGrid, KoopaFortressBar, false, "Koopa Bros Fortress"));
+            data.WorldsData.Add("MtRugged", new WorldData(MtRuggedTop, MtRugged, null, MtRuggedHint, MtRuggedGrid, MtRuggedBar, false, "Mt Rugged"));
+            data.WorldsData.Add("DryDryOutpost", new WorldData(DryDryOutpostTop, DryDryOutpost, null, DryDryOutpostHint, DryDryOutpostGrid, DryDryOutpostBar, false, "Dry Dry Outpost"));
+            data.WorldsData.Add("DryDryDesert", new WorldData(DryDryDesertTop, DryDryDesert, null, DryDryDesertHint, DryDryDesertGrid, DryDryDesertBar, false, "Dry Dry Desert"));
+            data.WorldsData.Add("DryDryRuins", new WorldData(DryDryRuinsTop, DryDryRuins, null, DryDryRuinsHint, DryDryRuinsGrid, DryDryRuinsBar, false, "Dry Dry Ruins"));
+            data.WorldsData.Add("ForeverForest", new WorldData(ForeverForestTop, ForeverForest, null, ForeverForestHint, ForeverForestGrid, ForeverForestBar, false, "Forever Forest"));
+            data.WorldsData.Add("BooMansion", new WorldData(BooMansionTop, BooMansion, null, BooMansionHint, BooMansionGrid, BooMansionBar, false, "Boos Mansion"));
+            data.WorldsData.Add("GustyGulch", new WorldData(GustyGulchTop, GustyGulch, null, GustyGulchHint, GustyGulchGrid, GustyGulchBar, false, "Gusty Gulch"));
+            data.WorldsData.Add("TubbaCastle", new WorldData(TubbaCastleTop, TubbaCastle, null, TubbaCastleHint, TubbaCastleGrid, TubbaCastleBar, false, "Tubbas Castle"));
+            data.WorldsData.Add("ShyGuyToybox", new WorldData(ShyGuyToyboxTop, ShyGuyToybox, null, ShyGuyToyboxHint, ShyGuyToyboxGrid, ShyGuyToyboxBar, false, "Shy Guys Toybox"));
+            data.WorldsData.Add("JadeJungle", new WorldData(JadeJungleTop, JadeJungle, null, JadeJungleHint, JadeJungleGrid, JadeJungleBar, false, "Jade Jungle"));
+            data.WorldsData.Add("MtLavalava", new WorldData(MtLavalavaTop, MtLavalava, null, MtLavalavaHint, MtLavalavaGrid, MtLavalavaBar, false, "Mt Lavalava"));
+            data.WorldsData.Add("FlowerFields", new WorldData(FlowerFieldsTop, FlowerFields, null, FlowerFieldsHint, FlowerFieldsGrid, FlowerFieldsBar, true, "Flower Fields"));
+            data.WorldsData.Add("ShiverMountain", new WorldData(ShiverMountainTop, ShiverMountain, null, ShiverMountainHint, ShiverMountainGrid, ShiverMountainBar, false, "Shiver Mountain"));
+            data.WorldsData.Add("CrystalPalace", new WorldData(CrystalPalaceTop, CrystalPalace, null, CrystalPalaceHint, CrystalPalaceGrid, CrystalPalaceBar, false, "Crystal Palace"));
+            data.WorldsData.Add("BowserCastle", new WorldData(BowserCastleTop, BowserCastle, null, BowserCastleHint, BowserCastleGrid, BowserCastleBar, false, "Bowser's Castle"));
+            data.WorldsData.Add("StartingGear", new WorldData(StartingGearTop, StartingGear, null, null, StartingGearGrid, StartingGearBar, false, "Starting Items"));
 
             //data.ProgressKeys.Add("ToadTownTunnels", new List<string>() { "", "STTChests", "TwilightThorn", "Struggle", "ComputerRoom", "Axel", "DataRoxas" });
             //data.ProgressKeys.Add("KoopaRegion", new List<string>() { "", "MysteriousTower", "Sandlot", "Mansion", "BetwixtAndBetween", "DataAxel" });
@@ -107,7 +107,8 @@ namespace PapeTracker
                 { PartnersAndGearGrid.Name, 9 },
                 { MajorItemsGrid.Name, 7 },
                 { MinorItemsGrid.Name, 5 },
-                { BadgesGrid.Name, 3 }
+                { BadgesGrid.Name, 3 },
+                { "NoneGrid", 0 }
             };
 
             broadcast = new BroadcastWindow(data);
