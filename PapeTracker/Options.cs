@@ -905,7 +905,7 @@ namespace PapeTracker
 
         private void OnReset(object sender, RoutedEventArgs e)
         {
-            ModeDisplay.Header = "";
+            //ModeDisplay.Header = "";
             data.mode = Mode.None;
 
             collected = 0;
