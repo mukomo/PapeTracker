@@ -9,6 +9,7 @@ using Microsoft.Win32;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
+using Newtonsoft.Json.Linq;
 using System.Text.Json.Serialization;
 using System.Windows.Media;
 
@@ -257,6 +258,16 @@ namespace PapeTracker
             writer.WriteLine(FlowerFields);
             writer.WriteLine(CrystalPalace);
             writer.WriteLine(StartingGear);
+
+            foreach (var world in data.WorldsData)
+            {
+                writer.Write(world.Key + ": ");
+                foreach (var item in world.Value.Checks)
+                {
+                    if (item.Item is object) writer.Write(item.Value + ", ");
+                }
+                writer.WriteLine();
+            }
 
             writer.Close();
         }
@@ -552,9 +563,77 @@ namespace PapeTracker
                 //    OpenKHSeed(files[0]);
                 if (Path.GetExtension(files[0]).ToUpper().Equals(".TXT"))
                 {
-                    LoadValues(files[0]);
+                    LoadSpoiler(files[0]);
                 }
+                //else if (Path.GetExtension(files[0]).ToUpper().Equals(".JSON"))
+                //{
+                //    LoadJSONSpioler(files[0]);
+                //}
             }
+        }
+
+        public void LoadSpoiler(string fileName)
+        {
+            StreamReader fileReader = new StreamReader(fileName);
+            string fileContents = fileReader.ReadToEnd();
+            if (fileContents[0] == '{')
+            {
+                LoadJSONSpoiler(fileContents);
+            }
+            else
+            {
+                MessageBox.Show("Invalid spoiler log. Make sure the seed was generated after Jan 7, 2023 and that the first character in the log is \"{\".");
+                //LoadTextSpoiler(fileName);
+            }
+        }
+
+        private void LoadJSONSpoiler(string fileContents)
+        {
+            foreach (var world in data.WorldsData)
+            {
+                if (world.Value.hint is null) continue;
+                world.Value.hint.Text = "0";
+                world.Value.hint.Foreground = Brushes.Teal;
+            }
+
+            var jsonObject = JObject.Parse(fileContents);
+            foreach (var region in data.WorldsData)
+            {
+                string regionName = region.Value.SpoilerLogRegion;
+                if (!(jsonObject[regionName] is null))
+                {
+                    List<Check> checks = new List<Check>();
+                    int itemValueTotal = 0;
+                    foreach (JProperty item in jsonObject[regionName])
+                    {
+                        string name = item.Name;
+                        string value = item.Value.ToString();
+                        Item checkItem;
+                        try
+                        {
+                            Item matchingItem = data.Items.First(itemToUse => GetItemName(itemToUse).Equals(value));
+                            checkItem= matchingItem;
+                            itemValueTotal += MainWindow.itemValues[matchingItem.Tag.ToString()];
+                        }
+                        catch (Exception)
+                        {
+                            checkItem = null;
+                        }
+
+                        Check checkToAdd = new Check();
+                        checkToAdd.Name = name;
+                        checkToAdd.Value = value;
+                        checkToAdd.Item= checkItem;
+                        checks.Add(checkToAdd);
+                    }
+                    region.Value.Checks = checks;
+                    if (region.Value.hint is null) continue;
+                    region.Value.hint.Text = itemValueTotal.ToString();
+                    region.Value.worldGrid.UpdateWorldHintColor();
+                }
+
+            }
+            SeedLoadedDisplay.Header = "Seed Loaded";
         }
 
         private void LoadValues(object sender, RoutedEventArgs e)
@@ -568,11 +647,11 @@ namespace PapeTracker
             };
             if (openFileDialog.ShowDialog() == true)
             {
-                LoadValues(openFileDialog.FileName);
+                LoadTextSpoiler(openFileDialog.FileName);
             }
         }
 
-        public void LoadValues(string filename)
+        public void LoadTextSpoiler(string filename)
         {
             StreamReader streamReader = new StreamReader(filename);
             if(streamReader.EndOfStream)
@@ -618,7 +697,7 @@ namespace PapeTracker
                         Item matchingItem = data.Items.First(itemToUse => GetItemName(itemToUse).Equals(item));
                         itemsinRegion.Add(matchingItem);
                     }
-                    catch(Exception ex)
+                    catch(Exception)
                     {
                         continue;
                     }
@@ -630,7 +709,7 @@ namespace PapeTracker
                         var matchingWorld = data.WorldsData.First(region => region.Value.SpoilerLogRegion.Equals(currentLine.Trim()));
                         currentRegion = matchingWorld.Key;
                     }
-                    catch (Exception ex)
+                    catch (Exception)
                     {
                         continue;
                     }
@@ -826,7 +905,7 @@ namespace PapeTracker
 
         private void OnReset(object sender, RoutedEventArgs e)
         {
-            ModeDisplay.Header = "";
+            //ModeDisplay.Header = "";
             data.mode = Mode.None;
 
             collected = 0;

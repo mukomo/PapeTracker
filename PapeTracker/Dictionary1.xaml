@@ -106,27 +106,27 @@
     
 
     <!--Simple World Icons-->
-	<Image x:Key="GoombaRegionImage" Source="Images\Pape\Partners\Goombario.png"/>
+	<Image x:Key="GoombaRegionImage" Source="Images\Pape\PM_Goompa.png"/>
     <Image x:Key="ToadTownTunnelsImage" Source="Images\Pape\PM_Blooper_Baby.gif"/>
-    <Image x:Key="KoopaRegionImage" Source="Images\Pape\Partners\Kooper.png"/>
-    <Image x:Key="MtRuggedImage" Source="Images\Pape\Partners\Parakarry.png"/>
-    <Image x:Key="DryDryDesertImage" Source="Images\Pape\Letters\PM_Nomadimouse.png"/>
+    <Image x:Key="KoopaRegionImage" Source="Images\Pape\PM_KoopaKoot.png"/>
+    <Image x:Key="MtRuggedImage" Source="Images\Pape\PM_Whacka.png"/>
+    <Image x:Key="DryDryDesertImage" Source="Images\Pape\PM_BanditRed.png"/>
     <Image x:Key="ForeverForestImage" Source="Images\Pape\PM_Oaklie.png"/>
     <Image x:Key="GustyGulchImage" Source="Images\Pape\PM_Herbert.png"/>
-    <Image x:Key="ShyGuyToyboxImage" Source="Images\Pape\Partners\Watt.png"/>
-    <Image x:Key="MtLavalavaImage" Source="Images\Pape\MinorItems\PM_VolcanoVase.gif"/>
+    <Image x:Key="ShyGuyToyboxImage" Source="Images\Pape\PM_BlueShyGuy.png"/>
+    <Image x:Key="MtLavalavaImage" Source="Images\Pape\PM_PiranhaPlant.png"/>
     <Image x:Key="ShiverMountainImage" Source="Images\Pape\PM_Herringway.png"/>
     <Image x:Key="BowserCastleImage" Source="Images\Pape\PM_Bowser.gif"/>
 
     <Image x:Key="ToadTownImage" Source="Images\Pape\PM_Toad.png"/>
     <Image x:Key="ShootingStarSummitImage" Source="Images\Pape\Letters\PM_Merlow.png"/>
-    <Image x:Key="KoopaFortressImage" Source="Images\Pape\Partners\Bombette.png"/>
+    <Image x:Key="KoopaFortressImage" Source="Images\Pape\PM_NinjaKoopa.png"/>
     <Image x:Key="DryDryOutpostImage" Source="Images\Pape\Letters\PM_Little_Mouser.png"/>
     <Image x:Key="DryDryRuinsImage" Source="Images\Pape\PM_Tutankoopa.gif"/>
-    <Image x:Key="BooMansionImage" Source="Images\Pape\Partners\bow.png"/>
+    <Image x:Key="BooMansionImage" Source="Images\Pape\PM_Bootler.png"/>
     <Image x:Key="TubbaCastleImage" Source="Images\Pape\PM_Tubba's_Heart.gif"/>
-    <Image x:Key="JadeJungleImage" Source="Images\Pape\Partners\Sushie.png"/>
-    <Image x:Key="FlowerFieldsImage" Source="Images\Pape\Partners\Lakilester.png"/>
+    <Image x:Key="JadeJungleImage" Source="Images\Pape\PM_YoshiChief.png"/>
+    <Image x:Key="FlowerFieldsImage" Source="Images\Pape\PM_Lakilulu.png"/>
     <Image x:Key="CrystalPalaceImage" Source="Images\Pape\PM_Crystal_King.gif"/>
     <Image x:Key="StartingGearImage" Source="Images\Pape\PM_StarPoint.png"/>
 </ResourceDictionary>

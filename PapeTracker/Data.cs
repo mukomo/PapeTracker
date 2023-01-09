@@ -51,6 +51,7 @@ namespace PapeTracker
         public int progress;
 
         public List<string> checkCount = new List<string>();
+        public List<Check> Checks = new List<Check>();
 
         public Grid top;
         public Button world;
@@ -74,6 +75,23 @@ namespace PapeTracker
             progress = 0;
             SpoilerLogRegion = spoilerLogRegion;
         }
+    }
+
+    public class Check
+    {
+        public string Name { get; set; }
+        public string Value { get; set; }
+        public Item Item { get; set; }
+        public CheckType checkType { get; set; }
+    }
+
+    public enum CheckType
+    {
+        Normal,
+        Panel,
+        Coin,
+        Letter,
+        Favor
     }
 
     public enum Mode

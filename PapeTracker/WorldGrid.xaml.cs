@@ -9,6 +9,7 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
+using System.Windows.Markup;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
@@ -45,8 +46,8 @@ namespace PapeTracker
                 TextBlock hint = MainWindow.data.WorldsData[worldName].hint;
                 if(!(hint is null))
                 {
-                    int value = Int32.Parse(hint.Text);
-                    IncrementFound(worldName, button);
+                    int intValue;
+                    if(Int32.TryParse(hint.Text, out intValue)) IncrementFound(button);
                 }
                 
             }
@@ -96,7 +97,7 @@ namespace PapeTracker
                 string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
 
                 if (System.IO.Path.GetExtension(files[0]).ToUpper() == ".TXT")
-                    window.LoadValues(files[0]);
+                    window.LoadSpoiler(files[0]);
                 //else if (System.IO.Path.GetExtension(files[0]).ToUpper() == ".PNACH")
                 //    window.ParseSeed(files[0]);
             }
@@ -113,7 +114,7 @@ namespace PapeTracker
 
             // update collection count
             window.IncrementCollected(itemValue);
-            DecrementFound(Name.Remove(Name.Length - 4, 4), item);
+            DecrementFound(item);
             
             // update mouse actions
             if (MainWindow.data.dragDrop)
@@ -132,9 +133,9 @@ namespace PapeTracker
             item.DragDropEventFire(item.Name, Name.Remove(Name.Length - 4, 4), true);
         }
 
-        public void IncrementFound(string world, Item item)
+        public void IncrementFound(Item item)
         {
-            WorldData data = MainWindow.data.WorldsData[world];
+            WorldData data = MainWindow.data.WorldsData[Name.Remove(Name.Length - 4, 4)];
             int itemValue = MainWindow.itemValues[item.Tag.ToString()];
             int currentWorldValue = 0;
             if (!(data.hint is null))
@@ -144,14 +145,14 @@ namespace PapeTracker
                 {
                     currentWorldValue += itemValue;
                     data.hint.Text = currentWorldValue.ToString();
-                    if (currentWorldValue != 0) data.hint.Foreground = Brushes.White;
+                    UpdateWorldHintColor();
                 }
             }
         }
 
-        public void DecrementFound(string world, Item item)
+        public void DecrementFound(Item item)
         {
-            WorldData data = MainWindow.data.WorldsData[world];
+            WorldData data = MainWindow.data.WorldsData[Name.Remove(Name.Length - 4, 4)];
             int itemValue = MainWindow.itemValues[item.Tag.ToString()];
             int currentWorldValue = 0;
             if(!(data.hint is null))
@@ -161,8 +162,23 @@ namespace PapeTracker
                 {
                     currentWorldValue -= itemValue;
                     data.hint.Text = currentWorldValue.ToString();
-                    if (currentWorldValue == 0) data.hint.Foreground = Brushes.Teal;
+                    UpdateWorldHintColor();
                 }
+            }
+        }
+
+        public void UpdateWorldHintColor()
+        {
+            WorldData data = MainWindow.data.WorldsData[Name.Remove(Name.Length - 4, 4)];
+            TextBlock hint = data.hint;
+            if (hint != null)
+            {
+                int hintValue;
+                bool isHintNumeric = Int32.TryParse(hint.Text, out hintValue);
+                if (isHintNumeric && hintValue >= 100) hint.FontSize = 24;
+                else hint.FontSize = 32;
+                if (isHintNumeric && hintValue == 0) hint.Foreground = Brushes.Teal;
+                else hint.Foreground = Brushes.White;
             }
         }
 
