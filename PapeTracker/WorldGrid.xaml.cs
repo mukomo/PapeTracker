@@ -46,8 +46,8 @@ namespace PapeTracker
                 TextBlock hint = MainWindow.data.WorldsData[worldName].hint;
                 if(!(hint is null))
                 {
-                    int value = Int32.Parse(hint.Text);
-                    IncrementFound(button);
+                    int intValue;
+                    if(Int32.TryParse(hint.Text, out intValue)) IncrementFound(button);
                 }
                 
             }
