@@ -58,7 +58,7 @@
             </MenuItem>
             <MenuItem Name="ModeDisplay" Foreground="DimGray" Header="Spoiler Log Import Mode" Focusable="False" IsHitTestVisible="False"/>
             <MenuItem Name="SeedLoadedDisplay" Foreground="DimGray" Header="" Focusable="False" IsHitTestVisible="False"/>
-            <MenuItem Header="v0.2.0" IsHitTestVisible="False" Focusable="False" HorizontalAlignment="Right"/>
+            <MenuItem Header="v0.2.1" IsHitTestVisible="False" Focusable="False" HorizontalAlignment="Right"/>
         </Menu>
 
         <Grid>
