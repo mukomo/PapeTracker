@@ -607,7 +607,7 @@ namespace PapeTracker
                     foreach (JProperty item in jsonObject[regionName])
                     {
                         string name = item.Name;
-                        string value = item.Value.ToString();
+                        string value = item.Value.ToString().Split(' ')[0];
                         Item checkItem;
                         try
                         {
