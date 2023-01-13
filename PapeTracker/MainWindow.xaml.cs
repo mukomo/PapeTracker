@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Windows.Documents;
 using System.Runtime.InteropServices;
 using System.ComponentModel;
+using System.Linq;
 
 namespace PapeTracker
 {
@@ -312,17 +313,25 @@ namespace PapeTracker
         {
             var button = (Button)sender;
             var gridToSwapTo = button.Tag;
-            foreach(Grid itemGrid in itemPools)
+
+            foreach (Button sibling in (button.Parent as Grid).Children)
             {
-                if(itemGrid.Name.Equals(gridToSwapTo))
-                {
-                    itemGrid.Visibility = Visibility.Visible;
-                }
-                else
-                {
-                    itemGrid.Visibility = Visibility.Collapsed;
-                }
+                itemPools.First(pool => pool.Name.Equals(sibling.Tag)).Visibility = Visibility.Collapsed;
+                sibling.Background = Brushes.Transparent;
             }
+            itemPools.First(pool => pool.Name.Equals(button.Tag)).Visibility = Visibility.Visible;
+            button.Background = Brushes.SlateGray;
+            //foreach(Grid itemGrid in itemPools)
+            //{
+            //    if(itemGrid.Name.Equals(gridToSwapTo))
+            //    {
+            //        itemGrid.Visibility = Visibility.Visible;
+            //    }
+            //    else
+            //    {
+            //        itemGrid.Visibility = Visibility.Collapsed;
+            //    }
+            //}
         }
 
         private void StarCompletionToggle(object sender, RoutedEventArgs e)
