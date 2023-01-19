@@ -7,12 +7,13 @@ using System.Windows;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
+[assembly: Guid("A82F1463-16D1-4E42-BFB2-D11A9F744A54")]
 [assembly: AssemblyTitle("PapeTracker")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("An item tracker for Paper Mario 64 Randomizers.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PapeTracker")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
