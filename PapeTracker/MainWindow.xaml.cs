@@ -63,7 +63,7 @@ namespace PapeTracker
             data.WorldsData.Add("JadeJungle", new WorldData(JadeJungleTop, JadeJungle, null, JadeJungleHint, JadeJungleGrid, JadeJungleBar, false, "Jade Jungle"));
             data.WorldsData.Add("MtLavalava", new WorldData(MtLavalavaTop, MtLavalava, null, MtLavalavaHint, MtLavalavaGrid, MtLavalavaBar, false, "Mt Lavalava"));
             data.WorldsData.Add("FlowerFields", new WorldData(FlowerFieldsTop, FlowerFields, null, FlowerFieldsHint, FlowerFieldsGrid, FlowerFieldsBar, true, "Flower Fields"));
-            data.WorldsData.Add("ShiverMountain", new WorldData(ShiverMountainTop, ShiverMountain, null, ShiverMountainHint, ShiverMountainGrid, ShiverMountainBar, false, "Shiver Mountain"));
+            data.WorldsData.Add("ShiverMountain", new WorldData(ShiverMountainTop, ShiverMountain, null, ShiverMountainHint, ShiverMountainGrid, ShiverMountainBar, false, "Shiver Region"));
             data.WorldsData.Add("CrystalPalace", new WorldData(CrystalPalaceTop, CrystalPalace, null, CrystalPalaceHint, CrystalPalaceGrid, CrystalPalaceBar, false, "Crystal Palace"));
             data.WorldsData.Add("BowserCastle", new WorldData(BowserCastleTop, BowserCastle, null, BowserCastleHint, BowserCastleGrid, BowserCastleBar, false, "Bowser's Castle"));
             data.WorldsData.Add("StartingGear", new WorldData(StartingGearTop, StartingGear, null, null, StartingGearGrid, StartingGearBar, false, "Starting Items"));
