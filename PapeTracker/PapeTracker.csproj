@@ -56,6 +56,9 @@
   <PropertyGroup>
     <ApplicationIcon>app.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>PapeTracker.App</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -190,7 +193,7 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-	<Resource Include="app.ico" />
+    <Resource Include="app.ico" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\VerticalBarWhite.png" />
