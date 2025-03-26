@@ -167,6 +167,16 @@ namespace PapeTracker
             }
         }
 
+        public void LoadTotalValue(int totalValue)
+        {
+            WorldData data = MainWindow.data.WorldsData[Name.Remove(Name.Length - 4, 4)];
+            if (!(data.hint is null))
+            {
+                data.hint.Text = totalValue.ToString();
+                UpdateWorldHintColor();
+            }
+        }
+
         public void UpdateWorldHintColor()
         {
             WorldData data = MainWindow.data.WorldsData[Name.Remove(Name.Length - 4, 4)];

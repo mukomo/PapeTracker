@@ -24,9 +24,9 @@
     <Image x:Key="UltraStone" Source="Images\Pape\KeyItems\PM_UltraStone.gif"  x:Shared="false" Tag="PartnersGear"/>
     
     <!--Required Items for Chapter Progression: 7 pts-->
-	<Image x:Key="FortressKey" Source="Images\Pape\KeyItems\PM_FortressKey.png" x:Shared="false" Tag="Major"/>
+	  <Image x:Key="FortressKey" Source="Images\Pape\KeyItems\PM_FortressKey.png" x:Shared="false" Tag="Major"/>
     <Image x:Key="PulseStone" Source="Images\Pape\KeyItems\PM_PulseStone.gif" x:Shared="false" Tag="Major"/>
-	<Image x:Key="PyramidStone" Source="Images\Pape\KeyItems\PM_PyramidStone.gif" x:Shared="false" Tag="Major"/>
+	  <Image x:Key="PyramidStone" Source="Images\Pape\KeyItems\PM_PyramidStone.gif" x:Shared="false" Tag="Major"/>
     <Image x:Key="DiamondStone" Source="Images\Pape\KeyItems\PM_DiamondStone.png" x:Shared="false" Tag="Major"/>
     <Image x:Key="LunarStone" Source="Images\Pape\KeyItems\PM_LunarStone.gif" x:Shared="false" Tag="Major"/>
     <Image x:Key="RuinsKey" Source="Images\Pape\KeyItems\PM_Ruins_Key.png"  x:Shared="false" Tag="Major"/>
@@ -92,6 +92,45 @@
     </StackPanel>
     
     <!--Badges and Item Pouches: 3 pts-->
+    <Image x:Key="AllOrNothing" Source="Images\Pape\Badges\All_or_Nothing_Badge.png" x:Shared="false" Tag="Badges" ToolTip="All or Nothing"/>
+    <Image x:Key="AttackFXB" Source="Images\Pape\Badges\Attack_FX_B_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Attack FX B"/>
+    <Image x:Key="AttackFXC" Source="Images\Pape\Badges\Attack_FX_C_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Attack FX C"/>
+    <Image x:Key="AttackFXD" Source="Images\Pape\Badges\Attack_FX_D_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Attack FX D"/>
+    <Image x:Key="AttackFXE" Source="Images\Pape\Badges\Attack_FX_E_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Attack FX E"/>
+    <Image x:Key="BumpAttack" Source="Images\Pape\Badges\Bump_Attack_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Bump Attack"/>
+    <Image x:Key="ChillOut" Source="Images\Pape\Badges\Chill_Out_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Chill Out"/>
+    <Image x:Key="CloseCall" Source="Images\Pape\Badges\Close_Call_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Close Call"/>
+    <Image x:Key="DamageDodge" Source="Images\Pape\Badges\Damage_Dodge_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Damage Dodge"/>
+    <Image x:Key="DDownJump" Source="Images\Pape\Badges\DDown_Jump_Badge.png" x:Shared="false" Tag="Badges" ToolTip="D-Down Jump"/>
+    <Image x:Key="DDownPound" Source="Images\Pape\Badges\DDown_Pound_Badge.png" x:Shared="false" Tag="Badges" ToolTip="D-Down Pound"/>
+    <Image x:Key="DeepFocus" Source="Images\Pape\Badges\Deep_Focus_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Deep Focus"/>
+    <Image x:Key="DefendPlus" Source="Images\Pape\Badges\Defend_Plus_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Defend Plus"/>
+    <Image x:Key="DizzyAttack" Source="Images\Pape\Badges\Dizzy_Attack_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Dizzy Attack"/>
+    <Image x:Key="DizzyStomp" Source="Images\Pape\Badges\Dizzy_Stomp_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Dizzy Stomp"/>
+    <Image x:Key="DodgeMaster" Source="Images\Pape\Badges\Dodge_Master_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Dodge Master"/>
+    <Image x:Key="MegaJump" Source="Images\Pape\Badges\Mega_Jump_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaQuake" Source="Images\Pape\Badges\Mega_Quake_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaSmash" Source="Images\Pape\Badges\Mega_Smash_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="PowerPlus" Source="Images\Pape\Badges\Power_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="SpikeShield" Source="Images\Pape\Badges\Spike_Shield_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FeelingFine" Source="Images\Pape\Badges\Feeling_Fine_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Feeling Fine"/>
+    <Image x:Key="FPPlus" Source="Images\Pape\Badges\FP_Plus_Badge.png" x:Shared="false" Tag="Badges" ToolTip="FP Plus"/>
+    <Image x:Key="HPPlus" Source="Images\Pape\Badges\HP_Plus_Badge.png" x:Shared="false" Tag="Badges" ToolTip="HP Plus"/>
+    <!--<Image x:Key="BumpAttack" Source="Images\Pape\Badges\Bump_Attack_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaJump" Source="Images\Pape\Badges\Mega_Jump_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Mega Jump"/>
+    <Image x:Key="MegaQuake" Source="Images\Pape\Badges\Mega_Quake_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Mega Quake"/>
+    <Image x:Key="MegaSmash" Source="Images\Pape\Badges\Mega_Smash_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Mega Smash"/>
+    <Image x:Key="PowerPlus" Source="Images\Pape\Badges\Power_Plus_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Power Plus"/>
+    <Image x:Key="SpikeShield" Source="Images\Pape\Badges\Spike_Shield_Badge.png" x:Shared="false" Tag="Badges" ToolTip="Spike Shield"/>
+    <Image x:Key="DodgeMaster" Source="Images\Pape\Badges\Dodge_Master_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FeelingFine" Source="Images\Pape\Badges\Feeling_Fine_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FPPlus" Source="Images\Pape\Badges\FP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="HPPlus" Source="Images\Pape\Badges\HP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaJump" Source="Images\Pape\Badges\Mega_Jump_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaQuake" Source="Images\Pape\Badges\Mega_Quake_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaSmash" Source="Images\Pape\Badges\Mega_Smash_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="PowerPlus" Source="Images\Pape\Badges\Power_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="SpikeShield" Source="Images\Pape\Badges\Spike_Shield_Badge.png" x:Shared="false" Tag="Badges"/>
     <Image x:Key="BumpAttack" Source="Images\Pape\Badges\Bump_Attack_Badge.png" x:Shared="false" Tag="Badges"/>
     <Image x:Key="DodgeMaster" Source="Images\Pape\Badges\Dodge_Master_Badge.png" x:Shared="false" Tag="Badges"/>
     <Image x:Key="FeelingFine" Source="Images\Pape\Badges\Feeling_Fine_Badge.png" x:Shared="false" Tag="Badges"/>
@@ -102,6 +141,25 @@
     <Image x:Key="MegaSmash" Source="Images\Pape\Badges\Mega_Smash_Badge.png" x:Shared="false" Tag="Badges"/>
     <Image x:Key="PowerPlus" Source="Images\Pape\Badges\Power_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
     <Image x:Key="SpikeShield" Source="Images\Pape\Badges\Spike_Shield_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="BumpAttack" Source="Images\Pape\Badges\Bump_Attack_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="DodgeMaster" Source="Images\Pape\Badges\Dodge_Master_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FeelingFine" Source="Images\Pape\Badges\Feeling_Fine_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FPPlus" Source="Images\Pape\Badges\FP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="HPPlus" Source="Images\Pape\Badges\HP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaJump" Source="Images\Pape\Badges\Mega_Jump_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaQuake" Source="Images\Pape\Badges\Mega_Quake_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaSmash" Source="Images\Pape\Badges\Mega_Smash_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="PowerPlus" Source="Images\Pape\Badges\Power_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="SpikeShield" Source="Images\Pape\Badges\Spike_Shield_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="BumpAttack" Source="Images\Pape\Badges\Bump_Attack_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="DodgeMaster" Source="Images\Pape\Badges\Dodge_Master_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FeelingFine" Source="Images\Pape\Badges\Feeling_Fine_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="FPPlus" Source="Images\Pape\Badges\FP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="HPPlus" Source="Images\Pape\Badges\HP_Plus_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaJump" Source="Images\Pape\Badges\Mega_Jump_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaQuake" Source="Images\Pape\Badges\Mega_Quake_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="MegaSmash" Source="Images\Pape\Badges\Mega_Smash_Badge.png" x:Shared="false" Tag="Badges"/>
+    <Image x:Key="PowerPlus" Source="Images\Pape\Badges\Power_Plus_Badge.png" x:Shared="false" Tag="Badges"/>-->
     <Image x:Key="ItemPouch" Source="Images\Pape\PM_ItemPouch.png" x:Shared="false" Tag="Badges"/>
     
 

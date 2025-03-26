@@ -31,6 +31,7 @@
                 <MenuItem Header="Save Progress" Click="SaveProgress"/>
                 <MenuItem Header="Load Progress" Click="LoadProgress"/>
                 <Separator/>
+                <MenuItem Header="Load Spoiler Log" Click="LoadSpoilerMenuClick"/>
                 <!--<MenuItem Header="Auto Tracking">
                     <MenuItem Header="PCSX2" Click="InitPCSX2Tracker"/>
                     <MenuItem Header="PC" Click="InitPCTracker"/>
@@ -58,7 +59,7 @@
             </MenuItem>
             <MenuItem Name="ModeDisplay" Foreground="DimGray" Header="Spoiler Log Import Mode" Focusable="False" IsHitTestVisible="False"/>
             <MenuItem Name="SeedLoadedDisplay" Foreground="DimGray" Header="" Focusable="False" IsHitTestVisible="False"/>
-            <MenuItem Header="v0.2.3" IsHitTestVisible="False" Focusable="False" HorizontalAlignment="Right"/>
+            <MenuItem Header="v0.3.0" IsHitTestVisible="False" Focusable="False" HorizontalAlignment="Right"/>
         </Menu>
 
         <Grid>

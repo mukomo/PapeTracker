@@ -103,106 +103,125 @@ namespace PapeTracker
             //Progress += " " + data.WorldsData["MtLavalava"].progress.ToString();
 
             // save items in worlds
-            string GoombaRegion = "GoombaRegion:";
-            foreach (Item item in data.WorldsData["GoombaRegion"].worldGrid.Children)
+            List<string> saveData = new List<string>();
+            foreach (string worldName in WorldList.Worlds)
             {
-                GoombaRegion += " " + item.Name;
+                string saveDataLine = worldName + ":";
+                int value = 0;
+                WorldData currentWorld = data.WorldsData[worldName];
+
+                foreach (Check check in currentWorld.Checks)
+                {
+                    if (check.Item != null)
+                    {
+                        value += MainWindow.itemValues[check.Item.Tag.ToString()];
+                    }
+                }
+
+                saveDataLine += " " + value + " |";
+
+                foreach (Item item in currentWorld.worldGrid.Children)
+                {
+                    saveDataLine += " " + item.Name;
+                }
+                saveData.Add(saveDataLine);
             }
-            string ToadTown = "ToadTown:";
-            foreach (Item item in data.WorldsData["ToadTown"].worldGrid.Children)
-            {
-                ToadTown += " " + item.Name;
-            }
-            string simulated = "ToadTownTunnels:";
-            foreach (Item item in data.WorldsData["ToadTownTunnels"].worldGrid.Children)
-            {
-                simulated += " " + item.Name;
-            }
-            string KoopaRegion = "KoopaRegion:";
-            foreach (Item item in data.WorldsData["KoopaRegion"].worldGrid.Children)
-            {
-                KoopaRegion += " " + item.Name;
-            }
-            string KoopaFortress = "KoopaFortress:";
-            foreach (Item item in data.WorldsData["KoopaFortress"].worldGrid.Children)
-            {
-                KoopaFortress += " " + item.Name;
-            }
-            string beastCastle = "MtRugged:";
-            foreach (Item item in data.WorldsData["MtRugged"].worldGrid.Children)
-            {
-                beastCastle += " " + item.Name;
-            }
-            string DryDryOutpost = "DryDryOutpost:";
-            foreach (Item item in data.WorldsData["DryDryOutpost"].worldGrid.Children)
-            {
-                DryDryOutpost += " " + item.Name;
-            }
-            string DryDryDesert = "DryDryDesert:";
-            foreach (Item item in data.WorldsData["DryDryDesert"].worldGrid.Children)
-            {
-                DryDryDesert += " " + item.Name;
-            }
-            string DryDryRuins = "DryDryRuins:";
-            foreach (Item item in data.WorldsData["DryDryRuins"].worldGrid.Children)
-            {
-                DryDryRuins += " " + item.Name;
-            }
-            string ForeverForest = "ForeverForest:";
-            foreach (Item item in data.WorldsData["ForeverForest"].worldGrid.Children)
-            {
-                ForeverForest += " " + item.Name;
-            }
-            string BooMansion = "BooMansion:";
-            foreach (Item item in data.WorldsData["BooMansion"].worldGrid.Children)
-            {
-                BooMansion += " " + item.Name;
-            }
-            string GustyGulch = "GustyGulch:";
-            foreach (Item item in data.WorldsData["GustyGulch"].worldGrid.Children)
-            {
-                GustyGulch += " " + item.Name;
-            }
-            string TubbaCastle = "TubbaCastle:";
-            foreach (Item item in data.WorldsData["TubbaCastle"].worldGrid.Children)
-            {
-                TubbaCastle += " " + item.Name;
-            }
-            string ShyGuyToybox = "ShyGuyToybox:";
-            foreach (Item item in data.WorldsData["ShyGuyToybox"].worldGrid.Children)
-            {
-                ShyGuyToybox += " " + item.Name;
-            }
-            string JadeJungle = "JadeJungle:";
-            foreach (Item item in data.WorldsData["JadeJungle"].worldGrid.Children)
-            {
-                JadeJungle += " " + item.Name;
-            }
-            string MtLavalava = "MtLavalava:";
-            foreach (Item item in data.WorldsData["MtLavalava"].worldGrid.Children)
-            {
-                MtLavalava += " " + item.Name;
-            }
-            string ShiverMountain = "ShiverMountain:";
-            foreach (Item item in data.WorldsData["ShiverMountain"].worldGrid.Children)
-            {
-                ShiverMountain += " " + item.Name;
-            }
-            string FlowerFields = "FlowerFields:";
-            foreach (Item item in data.WorldsData["FlowerFields"].worldGrid.Children)
-            {
-                FlowerFields += " " + item.Name;
-            }
-            string CrystalPalace = "CrystalPalace:";
-            foreach (Item item in data.WorldsData["CrystalPalace"].worldGrid.Children)
-            {
-                FlowerFields += " " + item.Name;
-            }
-            string StartingGear = "StartingGear:";
-            foreach (Item item in data.WorldsData["StartingGear"].worldGrid.Children)
-            {
-                FlowerFields += " " + item.Name;
-            }
+            //string GoombaRegion = "GoombaRegion:";
+            //string ToadTown = "ToadTown:";
+            //foreach (Item item in data.WorldsData["ToadTown"].worldGrid.Children)
+            //{
+            //    ToadTown += " " + item.Name;
+            //}
+            //string simulated = "ToadTownTunnels:";
+            //foreach (Item item in data.WorldsData["ToadTownTunnels"].worldGrid.Children)
+            //{
+            //    simulated += " " + item.Name;
+            //}
+            //string KoopaRegion = "KoopaRegion:";
+            //foreach (Item item in data.WorldsData["KoopaRegion"].worldGrid.Children)
+            //{
+            //    KoopaRegion += " " + item.Name;
+            //}
+            //string KoopaFortress = "KoopaFortress:";
+            //foreach (Item item in data.WorldsData["KoopaFortress"].worldGrid.Children)
+            //{
+            //    KoopaFortress += " " + item.Name;
+            //}
+            //string beastCastle = "MtRugged:";
+            //foreach (Item item in data.WorldsData["MtRugged"].worldGrid.Children)
+            //{
+            //    beastCastle += " " + item.Name;
+            //}
+            //string DryDryOutpost = "DryDryOutpost:";
+            //foreach (Item item in data.WorldsData["DryDryOutpost"].worldGrid.Children)
+            //{
+            //    DryDryOutpost += " " + item.Name;
+            //}
+            //string DryDryDesert = "DryDryDesert:";
+            //foreach (Item item in data.WorldsData["DryDryDesert"].worldGrid.Children)
+            //{
+            //    DryDryDesert += " " + item.Name;
+            //}
+            //string DryDryRuins = "DryDryRuins:";
+            //foreach (Item item in data.WorldsData["DryDryRuins"].worldGrid.Children)
+            //{
+            //    DryDryRuins += " " + item.Name;
+            //}
+            //string ForeverForest = "ForeverForest:";
+            //foreach (Item item in data.WorldsData["ForeverForest"].worldGrid.Children)
+            //{
+            //    ForeverForest += " " + item.Name;
+            //}
+            //string BooMansion = "BooMansion:";
+            //foreach (Item item in data.WorldsData["BooMansion"].worldGrid.Children)
+            //{
+            //    BooMansion += " " + item.Name;
+            //}
+            //string GustyGulch = "GustyGulch:";
+            //foreach (Item item in data.WorldsData["GustyGulch"].worldGrid.Children)
+            //{
+            //    GustyGulch += " " + item.Name;
+            //}
+            //string TubbaCastle = "TubbaCastle:";
+            //foreach (Item item in data.WorldsData["TubbaCastle"].worldGrid.Children)
+            //{
+            //    TubbaCastle += " " + item.Name;
+            //}
+            //string ShyGuyToybox = "ShyGuyToybox:";
+            //foreach (Item item in data.WorldsData["ShyGuyToybox"].worldGrid.Children)
+            //{
+            //    ShyGuyToybox += " " + item.Name;
+            //}
+            //string JadeJungle = "JadeJungle:";
+            //foreach (Item item in data.WorldsData["JadeJungle"].worldGrid.Children)
+            //{
+            //    JadeJungle += " " + item.Name;
+            //}
+            //string MtLavalava = "MtLavalava:";
+            //foreach (Item item in data.WorldsData["MtLavalava"].worldGrid.Children)
+            //{
+            //    MtLavalava += " " + item.Name;
+            //}
+            //string ShiverMountain = "ShiverMountain:";
+            //foreach (Item item in data.WorldsData["ShiverMountain"].worldGrid.Children)
+            //{
+            //    ShiverMountain += " " + item.Name;
+            //}
+            //string FlowerFields = "FlowerFields:";
+            //foreach (Item item in data.WorldsData["FlowerFields"].worldGrid.Children)
+            //{
+            //    FlowerFields += " " + item.Name;
+            //}
+            //string CrystalPalace = "CrystalPalace:";
+            //foreach (Item item in data.WorldsData["CrystalPalace"].worldGrid.Children)
+            //{
+            //    FlowerFields += " " + item.Name;
+            //}
+            //string StartingGear = "StartingGear:";
+            //foreach (Item item in data.WorldsData["StartingGear"].worldGrid.Children)
+            //{
+            //    FlowerFields += " " + item.Name;
+            //}
 
             FileStream file = File.Create(filename);
             StreamWriter writer = new StreamWriter(file);
@@ -238,35 +257,22 @@ namespace PapeTracker
                 writer.WriteLine(data.openKHHintText);
             }
             //writer.WriteLine(Progress);
-            writer.WriteLine(GoombaRegion);
-            writer.WriteLine(ToadTown);
-            writer.WriteLine(simulated);
-            writer.WriteLine(KoopaRegion);
-            writer.WriteLine(KoopaFortress);
-            writer.WriteLine(beastCastle);
-            writer.WriteLine(DryDryOutpost);
-            writer.WriteLine(DryDryDesert);
-            writer.WriteLine(DryDryRuins);
-            writer.WriteLine(ForeverForest);
-            writer.WriteLine(BooMansion);
-            writer.WriteLine(GustyGulch);
-            writer.WriteLine(TubbaCastle);
-            writer.WriteLine(ShyGuyToybox);
-            writer.WriteLine(JadeJungle);
-            writer.WriteLine(MtLavalava);
-            writer.WriteLine(ShiverMountain);
-            writer.WriteLine(FlowerFields);
-            writer.WriteLine(CrystalPalace);
-            writer.WriteLine(StartingGear);
-
-            foreach (var world in data.WorldsData)
+            foreach (string dataLine in saveData)
             {
-                writer.Write(world.Key + ": ");
-                foreach (var item in world.Value.Checks)
+                writer.WriteLine(dataLine);
+            }
+
+            if (false)
+            {
+                foreach (var world in data.WorldsData)
                 {
-                    if (item.Item is object) writer.Write(item.Value + ", ");
+                    writer.Write(world.Key + ": ");
+                    foreach (var item in world.Value.Checks)
+                    {
+                        if (item.Item is object) writer.Write(item.Value + ", ");
+                    }
+                    writer.WriteLine();
                 }
-                writer.WriteLine();
             }
 
             writer.Close();
@@ -471,11 +477,14 @@ namespace PapeTracker
                 string world = reader.ReadLine();
                 string worldName = world.Substring(0, world.IndexOf(':'));
                 string items = world.Substring(world.IndexOf(':') + 1).Trim();
+                int score = Int32.Parse(items.Split('|')[0].Trim());
+                items = items.Split('|')[1].Trim();
+                WorldGrid grid = FindName(worldName + "Grid") as WorldGrid;
+                grid.LoadTotalValue(score);
                 if (items != string.Empty)
                 {
                     foreach (string item in items.Split(' '))
                     {
-                        WorldGrid grid = FindName(worldName + "Grid") as WorldGrid;
                         Item importantCheck = FindName(item) as Item;
 
                         if (grid.Handle_Report(importantCheck, this, data))
@@ -572,6 +581,19 @@ namespace PapeTracker
             }
         }
 
+        private void LoadSpoilerMenuClick(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog loadSpoilerDialog = new OpenFileDialog();
+            loadSpoilerDialog.DefaultExt = ".txt";
+            loadSpoilerDialog.Filter = "txt files (*.txt)|*.txt";
+            loadSpoilerDialog.FileName = "";
+            loadSpoilerDialog.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            if (loadSpoilerDialog.ShowDialog() == true)
+            {
+                LoadSpoiler(loadSpoilerDialog.FileName);
+            }
+        }
+
         public void LoadSpoiler(string fileName)
         {
             StreamReader fileReader = new StreamReader(fileName);
@@ -596,7 +618,8 @@ namespace PapeTracker
                 world.Value.hint.Foreground = Brushes.Teal;
             }
 
-            var jsonObject = JObject.Parse(fileContents);
+            var fullFile = JObject.Parse(fileContents);
+            var jsonObject = fullFile["items"];
             foreach (var region in data.WorldsData)
             {
                 string regionName = region.Value.SpoilerLogRegion;
@@ -612,7 +635,7 @@ namespace PapeTracker
                         try
                         {
                             Item matchingItem = data.Items.First(itemToUse => GetItemName(itemToUse).Equals(value));
-                            checkItem= matchingItem;
+                            checkItem = matchingItem;
                             itemValueTotal += MainWindow.itemValues[matchingItem.Tag.ToString()];
                         }
                         catch (Exception)
@@ -620,10 +643,12 @@ namespace PapeTracker
                             checkItem = null;
                         }
 
-                        Check checkToAdd = new Check();
-                        checkToAdd.Name = name;
-                        checkToAdd.Value = value;
-                        checkToAdd.Item= checkItem;
+                        Check checkToAdd = new Check
+                        {
+                            Name = name,
+                            Value = value,
+                            Item = checkItem
+                        };
                         checks.Add(checkToAdd);
                     }
                     region.Value.Checks = checks;
@@ -924,7 +949,8 @@ namespace PapeTracker
                 {
                     Item item = worldData.worldGrid.Children[j] as Item;
                     worldData.worldGrid.Children.Remove(worldData.worldGrid.Children[j]);
-                    itemPools.First(p => p.Name.Equals(item.Tag)).Children.Add(item);
+                    itemPools.First(p => p.Name.Equals(item.Tag.ToString())).Children.Add(item);
+                    worldData.hint.Text = (Int32.Parse(worldData.hint.Text) + itemValues[item.Tag.ToString()]).ToString();
 
                     item.MouseDown -= item.Item_Return;
                     item.MouseEnter -= item.Report_Hover;

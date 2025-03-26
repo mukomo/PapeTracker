@@ -33,93 +33,11 @@ namespace PapeTracker
             InitializeComponent();
             //Item.UpdateTotal += new Item.TotalHandler(UpdateTotal);
             Numbers = dataIn.Numbers;
-            worlds.Add("GoombaRegion",0);
-            worlds.Add("ToadTown", 0);
-            worlds.Add("ToadTownTunnels",0);
-            worlds.Add("KoopaRegion",0);
-            worlds.Add("KoopaFortress",0);
-            worlds.Add("MtRugged",0);
-            worlds.Add("DryDryOutpost",0);
-            worlds.Add("DryDryDesert",0);
-            worlds.Add("DryDryRuins",0);
-            worlds.Add("ForeverForest",0);
-            worlds.Add("BooMansion",0);
-            worlds.Add("GustyGulch",0);
-            worlds.Add("TubbaCastle",0);
-            worlds.Add("ShyGuyToybox",0);
-            worlds.Add("JadeJungle",0);
-            worlds.Add("MtLavalava",0);
-            worlds.Add("FlowerFields", 0);
-            worlds.Add("Report", 0);
-            worlds.Add("TornPage", 0);
-            worlds.Add("Fire", 0);
-            worlds.Add("Blizzard", 0);
-            worlds.Add("Thunder", 0);
-            worlds.Add("Cure", 0);
-            worlds.Add("Reflect", 0);
-            worlds.Add("Magnet", 0);
-            worlds.Add("ShiverMountain", 0);
-            worlds.Add("CrystalPalace", 0);
-            worlds.Add("StartingGear", 0);
-
-            totals.Add("GoombaRegion", -1);
-            totals.Add("ToadTown", -1);
-            totals.Add("ToadTownTunnels", -1);
-            totals.Add("KoopaRegion", -1);
-            totals.Add("KoopaFortress", -1);
-            totals.Add("MtRugged", -1);
-            totals.Add("DryDryOutpost", -1);
-            totals.Add("DryDryDesert", -1);
-            totals.Add("DryDryRuins", -1);
-            totals.Add("ForeverForest", -1);
-            totals.Add("BooMansion", -1);
-            totals.Add("GustyGulch", -1);
-            totals.Add("TubbaCastle", -1);
-            totals.Add("ShyGuyToybox", -1);
-            totals.Add("JadeJungle", -1);
-            totals.Add("MtLavalava", -1);
-            totals.Add("ShiverMountain", -1);
-            totals.Add("CrystalPalace", -1);
-            totals.Add("StartingGear", -1);
-
-            important.Add("Fire", 0);
-            important.Add("Blizzard", 0);
-            important.Add("Thunder", 0);
-            important.Add("Cure", 0);
-            important.Add("Reflect", 0);
-            important.Add("Magnet", 0);
-            important.Add("Valor", 0);
-            important.Add("Wisdom", 0);
-            important.Add("Limit", 0);
-            important.Add("Master", 0);
-            important.Add("Final", 0);
-            important.Add("Nonexistence", 0);
-            important.Add("Connection", 0);
-            important.Add("Peace", 0);
-            important.Add("PromiseCharm", 0);
-            important.Add("Feather", 0);
-            important.Add("Ukulele", 0);
-            important.Add("Baseball", 0);
-            important.Add("Lamp", 0);
-            important.Add("Report", 0);
-            important.Add("TornPage", 0);
-            important.Add("SecondChance", 0);
-            important.Add("OnceMore", 0);
-
-            //Progression.Add("ToadTownTunnels", ToadTownTunnelsProgression);
-            //Progression.Add("KoopaRegion", KoopaRegionProgression);
-            //Progression.Add("KoopaFortress", KoopaFortressProgression);
-            //Progression.Add("MtRugged", MtRuggedProgression);
-            //Progression.Add("DryDryOutpost", DryDryOutpostProgression);
-            //Progression.Add("DryDryDesert", DryDryDesertProgression);
-            //Progression.Add("DryDryRuins", DryDryRuinsProgression);
-            //Progression.Add("ForeverForest", ForeverForestProgression);
-            //Progression.Add("BooMansion", BooMansionProgression);
-            //Progression.Add("GustyGulch", GustyGulchProgression);
-            //Progression.Add("TubbaCastle", TubbaCastleProgression);
-            //Progression.Add("ShyGuyToybox", ShyGuyToyboxProgression);
-            //Progression.Add("JadeJungle", JadeJungleProgression);
-            //Progression.Add("MtLavalava", MtLavalavaProgression);
+            foreach (string worldName in WorldList.Worlds)
+            {
+                worlds.Add(worldName, 0);
+                totals.Add(worldName, -1);
+            }
 
             data = dataIn;
 

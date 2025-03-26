@@ -82,7 +82,7 @@ namespace PapeTracker
         public string Name { get; set; }
         public string Value { get; set; }
         public Item Item { get; set; }
-        public CheckType checkType { get; set; }
+        public CheckType CheckType { get; set; }
     }
 
     public enum CheckType
