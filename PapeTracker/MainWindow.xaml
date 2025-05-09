@@ -45,7 +45,7 @@
                 <Separator/>
                 <MenuItem Header="Broadcast Window" HorizontalAlignment="Left" Click="BroadcastWindow_Open" Width="235"/>
                 <Separator/> -->
-                <MenuItem Header="Reset Window" Click="ResetSize"/>
+                <MenuItem Header="Reset Window Size" Click="ResetSize"/>
                 <MenuItem Header="Reset Tracker" Click="OnReset"/>
             </MenuItem>
             <MenuItem Header="Toggles" Focusable="False">
